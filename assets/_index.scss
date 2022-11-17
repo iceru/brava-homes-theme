@@ -1,0 +1,74 @@
+.cta {
+    position: relative;
+    height: 90vh;
+
+    .cta-logo {
+        position: absolute;
+        left: -20px;
+        top: 0;
+
+        .logo {
+            position: absolute;
+            left: 30%;
+            top: 25%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    .cta-text {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background: $champagne;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        @include h2;
+    }
+
+    .cta-logo-2 {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+
+        .logo {
+            position: absolute;
+            left: 60%;
+            top: 55%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            align-items: center;
+
+            .text {
+                margin-right: 22px;
+                text-transform: uppercase;
+                @include headButton;
+                color: white;
+                white-space: nowrap;
+            }
+        }
+    }
+}
+
+.about-grid {
+    .item {
+        align-items: center;
+    }
+
+    .title {
+        @include h1;
+    }
+
+    .subtitle {
+        @include subtitle1;
+        color: $primary;
+        margin-bottom: 6px;
+    }
+
+    .item-img {
+        img {
+            width: 100%;
+        }
+    }
+}
