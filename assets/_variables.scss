@@ -1,6 +1,9 @@
 $primary: #DB4A2B;
 $blue: #1C3545;
 $champagne: linear-gradient(50deg, #B3A38B 0%, #EFE2CF 100%);
+$gold: linear-gradient(269.97deg, #E4C381 23.36%, #DFC799 48.23%, #CFB074 68.36%);
+
+
 
 @mixin h1 {
     font-family: 'Quiche Display';
@@ -53,4 +56,33 @@ $champagne: linear-gradient(50deg, #B3A38B 0%, #EFE2CF 100%);
     font-weight: 300;
     font-size: 14px;
     line-height: 19px;
+}
+
+@mixin champagneText {
+    background: $champagne;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+@mixin goldText {
+    background: $gold;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+@mixin bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
