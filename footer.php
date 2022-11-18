@@ -2,66 +2,145 @@
 				// If Single or Archive (Category, Tag, Author or a Date based page).
 				if ( is_single() || is_archive() ) :
 			?>
-					</div><!-- /.col -->
+			</div><!-- /.col -->
 
-					<?php
+			<?php
 						get_sidebar();
 					?>
 
-				</div><!-- /.row -->
+			</div><!-- /.row -->
 			<?php
 				endif;
 			?>
-		</main><!-- /#main -->
-		<footer id="footer">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6">
-						<p><?php printf( esc_html__( '&copy; %1$s %2$s. All rights reserved.', 'brava-homes' ), date_i18n( 'Y' ), get_bloginfo( 'name', 'display' ) ); ?></p>
+			</main><!-- /#main -->
+			<footer id="footer">
+				<div class="footer-top">
+					<div class="bg">
+						<img src="<?php bloginfo('template_directory');?>/images/template/footer-bg-1.png"
+							alt="Footer Background">
 					</div>
-
-					<?php
-						if ( has_nav_menu( 'footer-menu' ) ) : // See function register_nav_menus() in functions.php
-							/*
-								Loading WordPress Custom Menu (theme_location) ... remove <div> <ul> containers and show only <li> items!!!
-								Menu name taken from functions.php!!! ... register_nav_menu( 'footer-menu', 'Footer Menu' );
-								!!! IMPORTANT: After adding all pages to the menu, don't forget to assign this menu to the Footer menu of "Theme locations" /wp-admin/nav-menus.php (on left side) ... Otherwise the themes will not know, which menu to use!!!
-							*/
-							wp_nav_menu(
-								array(
-									'theme_location'  => 'footer-menu',
-									'container'       => 'nav',
-									'container_class' => 'col-md-6',
-									'fallback_cb'     => '',
-									'items_wrap'      => '<ul class="menu nav justify-content-end">%3$s</ul>',
-									//'fallback_cb'    => 'WP_Bootstrap4_Navwalker_Footer::fallback',
-									'walker'          => new WP_Bootstrap4_Navwalker_Footer(),
-								)
-							);
-						endif;
-
-						if ( is_active_sidebar( 'third_widget_area' ) ) :
-					?>
-						<div class="col-md-12">
-							<?php
-								dynamic_sidebar( 'third_widget_area' );
-
-								if ( current_user_can( 'manage_options' ) ) :
-							?>
-								<span class="edit-link"><a href="<?php echo esc_url( admin_url( 'widgets.php' ) ); ?>" class="badge bg-secondary"><?php esc_html_e( 'Edit', 'brava-homes' ); ?></a></span><!-- Show Edit Widget link -->
-							<?php
-								endif;
-							?>
+					<div class="container">
+						<div class="row footer-logo">
+							<div class="col-12">
+								<div class="logo">
+									<img src="<?php bloginfo('template_directory');?>/images/brava-logo-white.png"
+										alt="Brava Homes">
+								</div>
+							</div>
 						</div>
-					<?php
-						endif;
-					?>
-				</div><!-- /.row -->
-			</div><!-- /.container -->
-		</footer><!-- /#footer -->
-	</div><!-- /#wrapper -->
-	<?php
+						<div class="row">
+							<div class="col-12 col-lg-4">
+								<div class="title">
+									Find us at
+								</div>
+								<div class="text">
+									Jl. Gn. Rajawali, Bencongan, Kec. Klp. Dua Kabupaten Tangerang, Banten — 15810
+								</div>
+							</div>
+							<div class="col-6 col-lg-2">
+								<div class="title">
+									Unit Type
+								</div>
+								<ul>
+									<li>
+										<a href="">Diponegoro</a>
+									</li>
+									<li>
+										<a href="">Himalaya</a>
+									</li>
+								</ul>
+							</div>
+							<div class="col-6 col-lg-2">
+								<div class="title">
+									about
+								</div>
+								<ul>
+									<li>
+										<a href="">Location</a>
+									</li>
+									<li>
+										<a href="">360 Tour</a>
+									</li>
+									<li>
+										<a href="">Articles</a>
+									</li>
+								</ul>
+							</div>
+							<div class="col-12 col-lg-3 col-socials">
+								<div class="title">
+									Socials
+								</div>
+								<div class="socials">
+									<div class="item">
+										<a href="">
+											<img src="<?php bloginfo('template_directory');?>/images/instagram.png"
+												alt="Instagram">
+										</a>
+									</div>
+									<div class="item">
+										<a href="">
+											<img src="<?php bloginfo('template_directory');?>/images/twitter.png" alt="Twitter">
+										</a>
+									</div>
+									<div class="item">
+										<a href="">
+											<img src="<?php bloginfo('template_directory');?>/images/facebook.png"
+												alt="Facebook">
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-lg-3">
+								<div class="award">
+									<div class="img">
+										<img src="<?php bloginfo('template_directory');?>/images/award.png" alt="Award">
+									</div>
+									<div class="text">
+										The Winner of <br>
+										The Best Township Development <br>
+										Indonesia Property Awards 2020
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="footer-bottom">
+					<div class="bg">
+						<img src="<?php bloginfo('template_directory');?>/images/template/footer-bg-2.png"
+							alt="Footer Background">
+					</div>
+					<div class="container">
+						<div class="row">
+							<div class="col-12 col-lg-4">
+								<div class="text">
+									Presented By
+								</div>
+								<div class="logo">
+									<img src="<?php bloginfo('template_directory');?>/images/lippo.png" alt="Lippo Group">
+								</div>
+							</div>
+							<div class="col-12 col-lg-6">
+								<div class="small">
+									<?php printf( esc_html__( 'Lippo Home &copy; %1$s. All rights reserved.'), date_i18n( 'Y' ) ); ?>
+								</div>
+								<div class="small">
+									DISCLAIMER • While every reasonable care has been taken in the preparation of this brochure,
+									the
+									developer and its agent cannot be held responsible for any inaccuracies.
+									All statements are believed to be correct but are not to be regarded as statements or
+									representations of fact.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer><!-- /#footer -->
+			</div><!-- /#wrapper -->
+			<?php
 		wp_footer();
 	?>
-</body>
-</html>
+			</body>
+
+			</html>

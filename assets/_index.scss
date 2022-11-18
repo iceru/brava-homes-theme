@@ -1,3 +1,9 @@
+.index {
+    background-color: $lightgrey;
+    position: relative;
+    z-index: -2;
+}
+
 .cta {
     position: relative;
     height: 90vh;
@@ -277,5 +283,42 @@
         @include h2;
         @include champagneText;
         margin-bottom: 84px;
+    }
+}
+
+.contact {
+    padding: 100px 0 160px;
+    position: relative;
+
+    .contact-text {
+        width: 70%;
+    }
+
+    .graphics {
+        left: 0;
+        bottom: -25%;
+        position: absolute;
+        width: 100%;
+        z-index: -1;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .subtitle {
+        @include subtitle1;
+        color: $primary;
+        margin-bottom: 12px;
+    }
+
+    .title {
+        @include h2;
+        margin-bottom: 23px;
+    }
+
+    .text {
+        @include body1;
+        text-align: justify;
     }
 }

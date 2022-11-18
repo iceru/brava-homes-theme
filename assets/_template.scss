@@ -1,0 +1,94 @@
+#footer {
+    background-color: transparent !important;
+
+    .bg {
+        @include bg;
+    }
+
+    .footer-top {
+        padding: 80px 0;
+        position: relative;
+
+        .col-lg-2 {
+            width: 12%;
+        }
+
+        .col-socials {
+            width: 16%;
+        }
+
+        .footer-logo {
+            margin-bottom: 51px;
+        }
+
+        .title {
+            text-transform: uppercase;
+            @include champagneText;
+            margin-bottom: 22px;
+            font-weight: 900;
+            font-size: 13px;
+        }
+
+        .text,
+        li a {
+            @include body1;
+            color: white;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+
+            li {
+                margin-bottom: 21px;
+            }
+        }
+
+        .award {
+            display: flex;
+            align-items: center;
+
+            .img {
+                margin-right: 20px;
+            }
+        }
+
+        .socials {
+            display: flex;
+            align-items: center;
+
+            .item {
+                margin-right: 21px;
+
+                img {
+                    width: 19px;
+                    height: 19px;
+                }
+            }
+        }
+    }
+
+    .footer-bottom {
+        position: relative;
+        color: white;
+        font-family: 'Avenir';
+        font-style: normal;
+        font-weight: 500;
+        padding: 2rem 0;
+
+        .text {
+            font-size: 9px;
+            line-height: 12px;
+            letter-spacing: 0.31em;
+            margin-bottom: 14px;
+            text-transform: uppercase;
+        }
+
+        .small {
+            font-size: 10px;
+            line-height: 14px;
+            margin-bottom: 11px;
+        }
+    }
+}

@@ -110,6 +110,8 @@ $link-decoration: none;
 @import 'variables';
 @import 'overrides';
 @import 'index';
+@import 'template';
+@import 'about';
 
 
 /**
@@ -189,9 +191,9 @@ img {
 
 /* Main */
 
-#main {
-	margin-top: $spacer;
-}
+// #main {
+// 	margin-top: $spacer;
+// }
 
 /* Footer */
 
