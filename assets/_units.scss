@@ -1,4 +1,8 @@
 .units-header {
+    .row {
+        margin: 0;
+    }
+
     .item {
         padding: 0;
         position: relative;
@@ -73,6 +77,11 @@
         z-index: 0;
     }
 
+    .content {
+        position: relative;
+        z-index: 1;
+    }
+
     .title {
         @include h1;
         @include champagneText;
@@ -82,5 +91,66 @@
     .text {
         @include body1;
         color: white;
+    }
+}
+
+.master {
+    padding: 100px 0;
+    background-color: $blue;
+    position: relative;
+
+    .bg {
+        @include bg;
+        mix-blend-mode: multiply;
+        z-index: 0;
+    }
+
+    .row {
+        align-items: center;
+        position: relative;
+        z-index: 1;
+    }
+
+    .subtitle {
+        @include subtitle1;
+        @include champagneText;
+        margin-bottom: 6px;
+    }
+
+    .title {
+        @include h1;
+        @include champagneText;
+    }
+
+    .text {
+        @include body1;
+        color: white;
+    }
+}
+
+.siteplan {
+    position: relative;
+    background-color: #BE5D39;
+
+    .container {
+        position: relative;
+
+        .title {
+            @include h1;
+            @include champagneText;
+            position: absolute;
+            top: 100px;
+            left: 0;
+        }
+    }
+
+    .img {
+        position: relative;
+        right: 0;
+        top: 0;
+
+        img {
+            width: 100%;
+        }
     }
 }
