@@ -112,6 +112,7 @@ $link-decoration: none;
 @import 'index';
 @import 'template';
 @import 'about';
+@import 'units';
 
 
 /**
@@ -191,9 +192,9 @@ img {
 
 /* Main */
 
-// #main {
-// 	margin-top: $spacer;
-// }
+#main {
+	padding-left: 4.5rem;
+}
 
 /* Footer */
 

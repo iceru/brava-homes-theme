@@ -1,5 +1,35 @@
+nav.sidebar {
+    background-color: $blue;
+    height: 100vh;
+    width: 74px;
+    padding: 24px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+    .bg {
+        @include bg;
+        bottom: 0;
+        height: 50%;
+        top: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        img {
+            height: auto;
+        }
+    }
+
+    .hamburger {
+        cursor: pointer;
+    }
+}
+
 #footer {
     background-color: transparent !important;
+    padding-left: 4.5rem;
 
     .bg {
         @include bg;

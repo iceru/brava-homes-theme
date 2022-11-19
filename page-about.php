@@ -89,8 +89,67 @@ get_header();
         </div>
     </div>
     <div class="images">
-        <div class="col-6 col-lg-3">
-            <img src="" alt="">
+        <div class="row">
+            <div class="col-6 col-lg-3">
+                <div class="item"><img class="w-100"
+                        src="<?php bloginfo('template_directory');?>/images/about/gallery-1.jpg" alt="Gallery">
+                </div>
+            </div>
+            <div class="col-6 col-lg-3">
+                <div class="item"><img class="w-100"
+                        src="<?php bloginfo('template_directory');?>/images/about/gallery-2.jpg" alt="Gallery">
+                </div>
+            </div>
+            <div class="col-6 col-lg-3">
+                <div class="item"><img class="w-100"
+                        src="<?php bloginfo('template_directory');?>/images/about/gallery-3.jpg" alt="Gallery">
+                </div>
+            </div>
+            <div class="col-6 col-lg-3">
+                <div class="item"><img class="w-100"
+                        src="<?php bloginfo('template_directory');?>/images/about/gallery-4.jpg" alt="Gallery">
+                </div>
+            </div>
+            <div class="col-6 col-lg-3">
+                <div class="item"><img class="w-100"
+                        src="<?php bloginfo('template_directory');?>/images/about/gallery-5.jpg" alt="Gallery">
+                </div>
+            </div>
+            <div class="col-6 col-lg-3">
+                <div class="item"><img class="w-100"
+                        src="<?php bloginfo('template_directory');?>/images/about/gallery-6.jpg" alt="Gallery">
+                </div>
+            </div>
+            <div class="col-6 col-lg-3">
+                <div class="item"><img class="w-100"
+                        src="<?php bloginfo('template_directory');?>/images/about/gallery-7.jpg" alt="Gallery">
+                </div>
+            </div>
+            <div class="col-6 col-lg-3">
+                <div class="item"><img class="w-100"
+                        src="<?php bloginfo('template_directory');?>/images/about/gallery-8.png" alt="Gallery">
+                </div>
+            </div>
+            <div class="col-6 col-lg-3">
+                <div class="item"><img class="w-100"
+                        src="<?php bloginfo('template_directory');?>/images/about/gallery-9.jpg" alt="Gallery">
+                </div>
+            </div>
+            <div class="col-6 col-lg-3">
+                <div class="item"><img class="w-100"
+                        src="<?php bloginfo('template_directory');?>/images/about/gallery-10.jpg" alt="Gallery">
+                </div>
+            </div>
+            <div class="col-6 col-lg-3">
+                <div class="item"><img class="w-100"
+                        src="<?php bloginfo('template_directory');?>/images/about/gallery-11.jpg" alt="Gallery">
+                </div>
+            </div>
+            <div class="col-6 col-lg-3">
+                <div class="item"><img class="w-100"
+                        src="<?php bloginfo('template_directory');?>/images/about/gallery-12.jpg" alt="Gallery">
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -100,7 +159,7 @@ get_header();
             Video
         </div>
         <div class="video-content">
-
+            <video src="<?php bloginfo('template_directory');?>/images/about/gallery-12.jpg" alt="Video"></video>
         </div>
     </div>
 </div>
