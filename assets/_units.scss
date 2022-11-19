@@ -154,3 +154,113 @@
         }
     }
 }
+
+.smart {
+    background-color: $lightgrey;
+    position: relative;
+    padding: 100px;
+
+    .bg {
+        @include bg;
+        opacity: 0.4;
+        z-index: 0;
+    }
+
+    .container {
+        position: relative;
+        z-index: 1;
+
+        .smart-header {
+            margin-bottom: 80px;
+
+            .subtitle {
+                @include subtitle1;
+                color: $primary;
+                margin-bottom: 6px;
+            }
+
+            .title {
+                @include h1;
+                color: $blue;
+                margin-bottom: 65px;
+            }
+
+            .text {
+                @include body1;
+                color: $text;
+            }
+        }
+
+        .home-features {
+            .item {
+                padding-right: 6rem;
+
+                .img {
+                    margin-bottom: 1rem;
+                }
+
+                .title {
+                    margin-bottom: 21px;
+                    @include subtitle1;
+                    color: $primary;
+                }
+
+                .text {
+                    @include body1;
+                    color: $text;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}
+
+.great-room {
+    position: relative;
+    background-color: #BE5D39;
+
+    .bg {
+        @include bg;
+        width: 50%;
+        mix-blend-mode: multiply;
+        z-index: 0;
+    }
+
+    .gr-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 60px;
+        z-index: 1;
+
+        .content {
+            position: relative;
+            padding: 50px;
+            height: 82%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .bg-border {
+            @include bg;
+        }
+
+        .subtitle {
+            @include subtitle1;
+            @include champagneText;
+            margin-bottom: 5px;
+        }
+
+        .title {
+            @include h1;
+            @include champagneText;
+            margin-bottom: 41px;
+        }
+
+        .text {
+            @include body1;
+            color: white;
+        }
+    }
+}

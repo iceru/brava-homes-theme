@@ -27,6 +27,82 @@ nav.sidebar {
     }
 }
 
+.offcanvas-sidebar {
+    background-color: $blue;
+    color: white;
+
+    .offcanvas-body {
+        padding: 40px !important;
+        position: relative;
+    }
+
+    .btn-close {
+        position: absolute;
+        filter: brightness(0) invert(1);
+        top: 15px;
+        right: 20px;
+    }
+
+    .header {
+        margin-bottom: 64px;
+        display: flex;
+        justify-content: space-between;
+
+        .language {
+            display: flex;
+            align-items: center;
+
+            .item {
+                background: linear-gradient(50deg, #B3A38B 0%, #EFE2CF 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                padding: 0 8px;
+                font-family: 'Avenir';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 16px;
+                letter-spacing: 0.22em;
+
+                &.active {
+                    @include champagneText;
+                }
+            }
+
+            .divider {
+                height: 16px;
+                width: 2px;
+                display: block;
+                background: $champagne;
+            }
+        }
+
+
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            margin-bottom: 24px;
+
+            a {
+                @include champagneText;
+                text-transform: uppercase;
+                font-family: 'Avenir';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 16px;
+                letter-spacing: 0.22em;
+            }
+        }
+    }
+}
+
 #footer {
     background-color: transparent !important;
     padding-left: 4.5rem;

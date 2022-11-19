@@ -34,8 +34,8 @@
 				</div>
 			</nav>
 		</header>
-		<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
-			aria-labelledby="offcanvasExampleLabel">\
+		<div class="offcanvas offcanvas-start offcanvas-sidebar" tabindex="-1" id="offcanvasExample"
+			aria-labelledby="offcanvasExampleLabel">
 			<div class="offcanvas-body">
 				<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 				<div class="header">
