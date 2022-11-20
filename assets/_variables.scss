@@ -5,6 +5,50 @@ $gold: linear-gradient(269.97deg, #E4C381 23.36%, #DFC799 48.23%, #CFB074 68.36%
 $lightgrey: #F5F5F5;
 $text: #3A3A3A;
 
+/* BREAKPOINTS */
+@mixin breakpoint($point) {
+    @if $point ==largeDesktop {
+        @media (min-width: 1600px) {
+            @content;
+        }
+    }
+
+    @else if $point ==desktop {
+        @media (min-width: 1200px) {
+            @content;
+        }
+    }
+
+    @else if $point ==laptop {
+        @media (min-width: 992px) {
+            @content;
+        }
+    }
+
+    @else if $point ==untilLaptop {
+        @media (max-width: 992px) {
+            @content;
+        }
+    }
+
+    @else if $point ==untilTablet {
+        @media (max-width: 768px) {
+            @content;
+        }
+    }
+
+    @else if $point ==tablet {
+        @media (min-width: 768px) {
+            @content;
+        }
+    }
+
+    @else if $point ==mobileonly {
+        @media (max-width: 576px) {
+            @content;
+        }
+    }
+}
 
 @mixin h1 {
     font-family: 'Quiche Display';
@@ -12,6 +56,11 @@ $text: #3A3A3A;
     font-weight: 500;
     font-size: 48px;
     line-height: 59px;
+
+    @include breakpoint(largeDesktop) {
+        font-size: 54px;
+        line-height: 65px;
+    }
 }
 
 @mixin h2 {
@@ -21,6 +70,11 @@ $text: #3A3A3A;
     font-size: 36px;
     line-height: 44px;
     letter-spacing: 0.01em;
+
+    @include breakpoint(largeDesktop) {
+        font-size: 42px;
+        line-height: 50px;
+    }
 }
 
 @mixin h3 {
@@ -31,6 +85,10 @@ $text: #3A3A3A;
     line-height: 27px;
     letter-spacing: 0.01em;
 
+    @include breakpoint(largeDesktop) {
+        font-size: 28px;
+        line-height: 32px;
+    }
 }
 
 @mixin headButton {
@@ -49,6 +107,11 @@ $text: #3A3A3A;
     font-size: 18px;
     line-height: 22px;
     letter-spacing: 0.01em;
+
+    @include breakpoint(largeDesktop) {
+        font-size: 24px;
+        line-height: 28px;
+    }
 }
 
 @mixin body1 {
@@ -57,6 +120,11 @@ $text: #3A3A3A;
     font-weight: 300;
     font-size: 14px;
     line-height: 19px;
+
+    @include breakpoint(largeDesktop) {
+        font-size: 16px;
+        line-height: 24px;
+    }
 }
 
 @mixin champagneText {
@@ -88,6 +156,6 @@ $text: #3A3A3A;
     }
 }
 
-.bg {
-    @include bg;
-}
+// .bg {
+//     @include bg;
+// }

@@ -11,10 +11,18 @@ get_header();
     <div class="container-fluid">
         <div class="row">
             <section class="cta col-12">
+                <div class="graphic top">
+                    <img src="<?php bloginfo('template_directory');?>/images/graphics/cta-right-top.png"
+                        alt="Background">
+                </div>
+                <div class="graphic bottom">
+                    <img src="<?php bloginfo('template_directory');?>/images/graphics/cta-right-btm.png"
+                        alt="Background">
+                </div>
                 <div class="cta-logo">
                     <div class="bg">
                         <img src="<?php bloginfo('template_directory');?>/images/index/cta-logo-bg.png"
-                            alt="Brava Homes">
+                            alt="Background">
                     </div>
                     <div class="logo">
                         <img src="<?php bloginfo('template_directory');?>/images/brava-logo-white.png"
@@ -30,7 +38,7 @@ get_header();
                 <div class="cta-logo-2">
                     <div class="bg">
                         <img src="<?php bloginfo('template_directory');?>/images/index/cta-logo-bg-2.png"
-                            alt="Brava Homes">
+                            alt="Background">
                     </div>
                     <div class="logo">
                         <div class="text">Presented By</div>
@@ -121,41 +129,65 @@ get_header();
                 <img src="<?php bloginfo('template_directory');?>/images/index/bg-units.png" alt="Brava Homes">
             </div>
             <div class="row unit">
+                <div class="ornament">
+                    <img src="<?php bloginfo('template_directory');?>/images/index/himalaya-ornament-1.png"
+                        alt="Ornament">
+                </div>
                 <div class="col-12 col-lg-6 item-img">
                     <img src="<?php bloginfo('template_directory');?>/images/index/himalaya.png" alt="Brava @ Himalaya">
                 </div>
                 <div class="col-12 col-lg-6 item-text">
-                    <div class="title">
-                        BRAVA @ <br> HIMALAYA
+                    <div class="bg-border">
+                        <img src="<?php bloginfo('template_directory');?>/images/index/himalaya-border.png"
+                            alt="Background">
                     </div>
-                    <div class="text">
-                        Brava Homes presents the first enclave of designer homes, Brava Himalaya. The best quality of
-                        contemporary living, composed from the best materials and set in a network of modern facilities.
-                        Crafted
-                        for those high-achievers in life with excellent taste, Brava Himalaya perfectly embodies the
-                        achievement
-                        of a lifetime.
+                    <div class="ornament-2">
+                        <img src="<?php bloginfo('template_directory');?>/images/index/himalaya-ornament-2.png"
+                            alt="Ornament">
                     </div>
-                    <div class="view">
-                        View Units
-                        <img src="<?php bloginfo('template_directory');?>/images/chevron-right.png" alt="View">
+                    <div class="content">
+                        <div class="title">
+                            BRAVA @ <br> HIMALAYA
+                        </div>
+                        <div class="text">
+                            Brava Homes presents the first enclave of designer homes, Brava Himalaya. The best quality
+                            of
+                            contemporary living, composed from the best materials and set in a network of modern
+                            facilities.
+                            Crafted
+                            for those high-achievers in life with excellent taste, Brava Himalaya perfectly embodies the
+                            achievement
+                            of a lifetime.
+                        </div>
+                        <div class="view">
+                            View Units
+                            <img src="<?php bloginfo('template_directory');?>/images/chevron-right.png" alt="View">
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="row unit">
                 <div class="col-12 col-lg-6 item-text">
-                    <div class="title">
-                        BRAVA @ <br> DIPONEGORO
+                    <div class="bg-border">
+                        <img src="<?php bloginfo('template_directory');?>/images/index/diponegoro-border.png"
+                            alt="Background">
                     </div>
-                    <div class="text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae purus ut lorem varius
-                        rutrum
-                        sit amet gravida sem. Nunc lobortis rhoncus ex id dictum. Sed maximus tristique suscipit. Nullam
-                        efficitur consectetur libero, ac suscipit diam bibendum.
-                    </div>
-                    <div class="view">
-                        View Units
-                        <img src="<?php bloginfo('template_directory');?>/images/chevron-right.png" alt="View">
+                    <div class="content diponegoro">
+                        <div class="title">
+                            BRAVA @ <br> DIPONEGORO
+                        </div>
+                        <div class="text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae purus ut lorem
+                            varius
+                            rutrum
+                            sit amet gravida sem. Nunc lobortis rhoncus ex id dictum. Sed maximus tristique suscipit.
+                            Nullam
+                            efficitur consectetur libero, ac suscipit diam bibendum.
+                        </div>
+                        <div class="view">
+                            View Units
+                            <img src="<?php bloginfo('template_directory');?>/images/chevron-right.png" alt="View">
+                        </div>
                     </div>
                 </div>
                 <div class="col-12 col-lg-6 item-img">
@@ -193,7 +225,7 @@ get_header();
             <img src="<?php bloginfo('template_directory');?>/images/index/bg-360-tour.png" alt="360 Tour Background">
         </div>
         <div class="row">
-            <div class="col-12 col-lg-5 tour-img">
+            <div class="col-12 col-lg-5 tour-img p-0">
                 <img src="<?php bloginfo('template_directory');?>/images/index/360-tour.png" alt="360 Tour">
             </div>
             <div class="col-12 col-lg-7 tour-text">

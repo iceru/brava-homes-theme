@@ -16,7 +16,7 @@ get_header();
             alt="Background">
     </div>
     <div class="container">
-        <div class="row align-items-center">
+        <div class="d-flex">
             <div class="col-12 col-lg-7 item-text">
                 <div class="content">
                     <div class="bg-border">

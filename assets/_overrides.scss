@@ -1,0 +1,23 @@
+.btn {
+    border-radius: 0;
+    background-color: transparent;
+    padding: 13px 17px;
+
+    &.btn-primary {
+        border: 1px solid #EFE2CF;
+        @include champagneText;
+        font-family: 'Avenir';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+
+        img {
+            margin-left: 8px;
+        }
+    }
+}
