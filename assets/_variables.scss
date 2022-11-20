@@ -87,3 +87,7 @@ $text: #3A3A3A;
         object-fit: cover;
     }
 }
+
+.bg {
+    @include bg;
+}
