@@ -1,6 +1,6 @@
 .unit-header {
     position: relative;
-    height: calc(100vh - 85px);
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -8,6 +8,10 @@
 
     .bg {
         @include bg;
+    }
+
+    .logo {
+        z-index: 10;
     }
 
     &::after {
@@ -62,6 +66,7 @@
                 border: 1px solid #D9D9D9;
                 padding: 18px 38px;
                 border-radius: 20px;
+                justify-content: space-between;
 
                 .name {
                     font-family: 'Avenir';
@@ -86,6 +91,116 @@
                     }
                 }
             }
+        }
+    }
+}
+
+.testimony {
+    background-color: $bg-orange;
+    position: relative;
+
+    .bg {
+        @include bg;
+        z-index: 0;
+        mix-blend-mode: multiply;
+        object-fit: contain;
+        object-position: bottom;
+    }
+
+    .container-fluid {
+        padding: 0;
+
+        .ratio {
+            position: relative;
+            padding-top: 66%;
+
+            img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+            }
+        }
+
+        .slick-prev {
+            left: 0;
+        }
+
+        .slick-next {
+            right: 0;
+        }
+    }
+
+    .container {
+        z-index: 1;
+        position: relative;
+        padding: 100px 0;
+    }
+
+    .title {
+        @include h2;
+        @include champagneText;
+        position: relative;
+        padding-bottom: 1rem;
+        margin-bottom: 160px;
+
+        &:after {
+            content: '';
+            width: 180px;
+            height: 2px;
+            background: $champagne;
+            left: 0;
+            bottom: 0;
+            position: absolute;
+        }
+    }
+
+    .item {
+        background-color: $blue;
+        position: relative;
+        padding: 32px 57px 20px 92px;
+        border-radius: 20px;
+        margin-left: 60px;
+        margin-right: 60px;
+
+        &::before {
+            position: absolute;
+            content: '';
+            height: 36px;
+            border-top-right-radius: 14px;
+            border-top-left-radius: 14px;
+            left: 0;
+            width: 50%;
+            top: -34px;
+            background-color: $blue;
+        }
+
+        .img {
+            width: 167px;
+            height: 167px;
+            position: absolute;
+            left: -90px;
+            top: -90px;
+
+            img {
+                border-radius: 50%;
+                width: 100%;
+                height: 100%;
+                object-fit: cover
+            }
+        }
+
+        .text {
+            @include body1;
+            color: $lightgrey;
+            margin-bottom: 27px;
+            text-align: justify;
+        }
+
+        .name {
+            @include h3;
+            @include champagneText;
         }
     }
 }
