@@ -67,7 +67,7 @@
 
 .subsection {
     padding: 112px;
-    background-color: #BE5D39;
+    background-color: $bg-orange;
     text-align: center;
     position: relative;
 
@@ -130,7 +130,7 @@
 
 .siteplan {
     position: relative;
-    background-color: #BE5D39;
+    background-color: $bg-orange;
 
     .container {
         position: relative;
@@ -217,7 +217,7 @@
 
 .great-room {
     position: relative;
-    background-color: #BE5D39;
+    background-color: $bg-orange;
 
     .bg {
         @include bg;
