@@ -101,6 +101,15 @@ $bg-orange: #BE5D39;
     letter-spacing: 0.15em;
 }
 
+@mixin button {
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.22em;
+}
+
 @mixin subtitle1 {
     font-family: 'Quiche Display';
     font-style: normal;

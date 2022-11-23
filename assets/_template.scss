@@ -92,12 +92,8 @@ nav.sidebar {
             a {
                 @include champagneText;
                 text-transform: uppercase;
-                font-family: 'Avenir';
-                font-style: normal;
+                @include button;
                 font-weight: 700;
-                font-size: 12px;
-                line-height: 16px;
-                letter-spacing: 0.22em;
             }
         }
     }

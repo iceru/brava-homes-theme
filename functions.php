@@ -180,11 +180,15 @@ if ( ! function_exists( 'brava_homes_content_nav' ) ) {
 
 		if ( $wp_query->max_num_pages > 1 ) {
 	?>
-			<div id="<?php echo esc_attr( $nav_id ); ?>" class="d-flex mb-4 justify-content-between">
-				<div><?php next_posts_link( '<span aria-hidden="true">&larr;</span> ' . esc_html__( 'Older posts', 'brava-homes' ) ); ?></div>
-				<div><?php previous_posts_link( esc_html__( 'Newer posts', 'brava-homes' ) . ' <span aria-hidden="true">&rarr;</span>' ); ?></div>
-			</div><!-- /.d-flex -->
-	<?php
+<div id="<?php echo esc_attr( $nav_id ); ?>" class="d-flex mb-4 justify-content-between">
+	<div>
+		<?php next_posts_link( '<span aria-hidden="true">&larr;</span> ' . esc_html__( 'Older posts', 'brava-homes' ) ); ?>
+	</div>
+	<div>
+		<?php previous_posts_link( esc_html__( 'Newer posts', 'brava-homes' ) . ' <span aria-hidden="true">&rarr;</span>' ); ?>
+	</div>
+</div><!-- /.d-flex -->
+<?php
 		} else {
 			echo '<div class="clearfix"></div>';
 		}
@@ -313,23 +317,23 @@ if ( ! function_exists( 'brava_homes_comment' ) ) {
 			case 'pingback':
 			case 'trackback':
 	?>
-		<li class="post pingback">
-			<p>
-				<?php
+<li class="post pingback">
+	<p>
+		<?php
 					esc_html_e( 'Pingback:', 'brava-homes' );
 					comment_author_link();
 					edit_comment_link( esc_html__( 'Edit', 'brava-homes' ), '<span class="edit-link">', '</span>' );
 				?>
-			</p>
+	</p>
 	<?php
 				break;
 			default:
 	?>
-		<li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
-			<article id="comment-<?php comment_ID(); ?>" class="comment">
-				<footer class="comment-meta">
-					<div class="comment-author vcard">
-						<?php
+<li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
+	<article id="comment-<?php comment_ID(); ?>" class="comment">
+		<footer class="comment-meta">
+			<div class="comment-author vcard">
+				<?php
 							$avatar_size = ( '0' !== $comment->comment_parent ? 68 : 136 );
 							echo get_avatar( $comment, $avatar_size );
 
@@ -347,20 +351,20 @@ if ( ! function_exists( 'brava_homes_comment' ) ) {
 
 							edit_comment_link( esc_html__( 'Edit', 'brava-homes' ), '<span class="edit-link">', '</span>' );
 						?>
-					</div><!-- .comment-author .vcard -->
+			</div><!-- .comment-author .vcard -->
 
-					<?php if ( '0' === $comment->comment_approved ) { ?>
-						<em class="comment-awaiting-moderation">
-							<?php esc_html_e( 'Your comment is awaiting moderation.', 'brava-homes' ); ?>
-						</em>
-						<br />
-					<?php } ?>
-				</footer>
+			<?php if ( '0' === $comment->comment_approved ) { ?>
+			<em class="comment-awaiting-moderation">
+				<?php esc_html_e( 'Your comment is awaiting moderation.', 'brava-homes' ); ?>
+			</em>
+			<br />
+			<?php } ?>
+		</footer>
 
-				<div class="comment-content"><?php comment_text(); ?></div>
+		<div class="comment-content"><?php comment_text(); ?></div>
 
-				<div class="reply">
-					<?php
+		<div class="reply">
+			<?php
 						comment_reply_link(
 							array_merge(
 								$args,
@@ -372,9 +376,9 @@ if ( ! function_exists( 'brava_homes_comment' ) ) {
 							)
 						);
 					?>
-				</div><!-- /.reply -->
-			</article><!-- /#comment-## -->
-		<?php
+		</div><!-- /.reply -->
+	</article><!-- /#comment-## -->
+	<?php
 				break;
 		endswitch;
 	}
@@ -496,4 +500,35 @@ function brava_homes_scripts_loader() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
+
+function gt_get_post_view() {
+    $count = get_post_meta( get_the_ID(), 'post_views_count', true );
+    return "$count views";
+}
+
+
+function gt_set_post_view() {
+    $key = 'post_views_count';
+    $post_id = get_the_ID();
+    $count = (int) get_post_meta( $post_id, $key, true );
+    $count++;
+    update_post_meta( $post_id, $key, $count );
+}
+
+
+function gt_posts_column_views( $columns ) {
+    $columns['post_views'] = 'Views';
+    return $columns;
+}
+
+
+function gt_posts_custom_column_views( $column ) {
+    if ( $column === 'post_views') {
+        echo gt_get_post_view();
+    }
+}
+
+
+add_filter( 'manage_posts_columns', 'gt_posts_column_views' );
+add_action( 'manage_posts_custom_column', 'gt_posts_custom_column_views' );
 add_action( 'wp_enqueue_scripts', 'brava_homes_scripts_loader' );
