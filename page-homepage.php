@@ -88,7 +88,7 @@ get_header();
 
                         </div>
                         <div class="title">
-                            The Home
+                            The Home <br>
                             of Dreams
                         </div>
                         <div class="text">
@@ -171,6 +171,10 @@ get_header();
                     <div class="bg-border">
                         <img src="<?php bloginfo('template_directory');?>/images/index/diponegoro-border.png"
                             alt="Background">
+                    </div>
+                    <div class="ornament diponegoro">
+                        <img src="<?php bloginfo('template_directory');?>/images/index/diponegoro-ornament-1.png"
+                            alt="Ornament">
                     </div>
                     <div class="content diponegoro">
                         <div class="title">

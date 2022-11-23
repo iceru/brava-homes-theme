@@ -78,6 +78,9 @@ $recent_post = new WP_Query($args_recent);
     <div class="bg">
         <img src="<?php bloginfo('template_directory');?>/images/articles/articles-bg.png" alt="Background">
     </div>
+    <div class="graphics">
+        <img src="<?php bloginfo('template_directory');?>/images/articles/graphic-bottom.png" alt="Background">
+    </div>
     <div class="container">
         <div class="featured">
             <div class="row">

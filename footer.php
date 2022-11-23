@@ -38,17 +38,17 @@
 							</div>
 							<div class="col-6 col-lg-2">
 								<div class="title">
-									about
+									About
 								</div>
 								<ul>
 									<li>
-										<a href="">Location</a>
+										<a href="/">Location</a>
 									</li>
 									<li>
 										<a href="">360 Tour</a>
 									</li>
 									<li>
-										<a href="">Articles</a>
+										<a href="/articles">Articles</a>
 									</li>
 								</ul>
 							</div>
@@ -58,7 +58,7 @@
 								</div>
 								<div class="socials">
 									<div class="item">
-										<a href="">
+										<a target="_blank" href="https://www.instagram.com/brava.homes/">
 											<img src="<?php bloginfo('template_directory');?>/images/instagram.png"
 												alt="Instagram">
 										</a>

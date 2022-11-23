@@ -51,34 +51,39 @@
 			aria-labelledby="offcanvasExampleLabel">
 			<div class="offcanvas-body">
 				<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-				<div class="header">
-					<a class="navbar-brand" href="<?php echo esc_url( home_url() ); ?>"
-						title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-						<?php
+				<div class="bg-bottom">
+					<img src="<?php bloginfo('template_directory');?>/images/graphics/sidebar.png" alt="Background">
+				</div>
+				<div class="top-section">
+					<div class="header">
+						<a class="navbar-brand" href="<?php echo esc_url( home_url() ); ?>"
+							title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+							<?php
 						$header_logo = get_theme_mod( 'header_logo' ); // Get custom meta-value.
 
 						if ( ! empty( $header_logo ) ) :
 					?>
-						<img src="<?php echo esc_url( $header_logo ); ?>"
-							alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" />
-						<?php
+							<img src="<?php echo esc_url( $header_logo ); ?>"
+								alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" />
+							<?php
 						else :
 							echo esc_attr( get_bloginfo( 'name', 'display' ) );
 						endif;
 					?>
-					</a>
-					<div class="language">
-						<div class="item active">
-							EN
-						</div>
-						<div class="divider"></div>
-						<div class="item">
-							ID
+						</a>
+						<div class="language">
+							<div class="item active">
+								EN
+							</div>
+							<div class="divider"></div>
+							<div class="item">
+								ID
+							</div>
 						</div>
 					</div>
-				</div>
 
-				<?php
+					<div class="menu-container">
+						<?php
 						// Loading WordPress Custom Menu (theme_location).
 						wp_nav_menu(
 							array(
@@ -90,7 +95,38 @@
 							)
 						);
 					?>
+					</div>
+				</div>
 
+				<div class="bottom-section">
+					<div class="title">
+						Socials
+					</div>
+					<div class="socials">
+						<div class="socials">
+							<div class="item">
+								<a target="_blank" href="https://www.instagram.com/brava.homes/">
+									<img src="<?php bloginfo('template_directory');?>/images/instagram.png"
+										alt="Instagram">
+								</a>
+							</div>
+							<div class="item">
+								<a target="_blank" href="#">
+									<img src="<?php bloginfo('template_directory');?>/images/twitter.png" alt="Twitter">
+								</a>
+							</div>
+							<div class="item">
+								<a target="_blank" href="#">
+									<img src="<?php bloginfo('template_directory');?>/images/facebook.png"
+										alt="Facebook">
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="copyright">
+						<?php printf( esc_html__( 'Lippo Home &copy; %1$s. All rights reserved.'), date_i18n( 'Y' ) ); ?>
+					</div>
+				</div>
 			</div>
 		</div>
 		<main id="main">

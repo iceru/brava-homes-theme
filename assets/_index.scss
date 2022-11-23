@@ -1,6 +1,6 @@
 .cta {
     position: relative;
-    height: 90vh;
+    height: 100vh;
     padding: 0;
 
     &::after {
@@ -198,6 +198,13 @@
             position: absolute;
             left: -60px;
             top: 0;
+
+            &.diponegoro {
+                right: -20px;
+                left: auto;
+                top: auto;
+                bottom: 70px;
+            }
         }
 
         &:last-child {
@@ -282,7 +289,7 @@
 
 .amenities {
     position: relative;
-    height: 80vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
