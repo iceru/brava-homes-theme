@@ -128,6 +128,8 @@ for ($x = 0; $x <= 6; $x++) {
                     What They Say About BRAVA
                 </div>
             </div>
+        </div>
+        <div class="row ms-3">
             <div class="col-12 col-lg-6">
                 <div class="item">
                     <div class="img">
