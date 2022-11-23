@@ -7,7 +7,7 @@
 
 get_header();
 
-for ($x = 0; $x <= 5; $x++) {
+for ($x = 0; $x <= 6; $x++) {
     ${'type'.$x} = get_field('types_'.$x);
 }
 ?>
@@ -26,16 +26,16 @@ for ($x = 0; $x <= 5; $x++) {
     </div>
     <div class="container">
         <div class="header row">
-            <div class="col-12 col-lg-4">
+            <div class="col-12 col-lg-5">
                 <div class="title">
                     <?php echo get_field('title') ?>
                 </div>
 
             </div>
-            <div class="col-12 col-lg-8">
+            <div class="col-12 col-lg-7">
                 <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                     <div class="name">Types</div>
-                    <?php for ($x = 1; $x < 6; $x++) {
+                    <?php for ($x = 1; $x < 7; $x++) {
                     ?>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link <?php echo $x === 1 ? 'active' : '' ?>" id="types-<?php echo $x ?>-tab"
@@ -48,12 +48,12 @@ for ($x = 0; $x <= 5; $x++) {
             </div>
         </div>
         <div class="tab-content" id="pills-tabContent">
-            <?php for ($x = 1; $x < 6; $x++) {
+            <?php for ($x = 1; $x < 7; $x++) {
                     ?>
             <div class="tab-pane fade show tab-<?php echo $x ?>  <?php echo $x === 1 ? 'active' : '' ?>"
                 id="types-<?php echo $x ?>" role="tabpanel" aria-labelledby="types-<?php echo $x ?>-tab" tabindex="0">
                 <div class="row">
-                    <div class="col-12 col-lg-4">
+                    <div class="col-12 col-lg-5">
                         <div class="row">
                             <div class="col-12 type">
                                 <div class="subtitle">Type</div>
@@ -75,7 +75,7 @@ for ($x = 0; $x <= 5; $x++) {
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-8">
+                    <div class="col-12 col-lg-7">
                         <div class="images-unit">
                             <?php if(${'type'.$x}['images']['image_1']) { ?>
                             <div class="item">

@@ -329,6 +329,7 @@
 #tour {
     position: relative;
     color: white;
+    padding-top: 62px;
 
     .bg {
         @include bg;
@@ -340,6 +341,10 @@
         }
     }
 
+    .tour-text {
+        padding-left: 4rem;
+    }
+
     .row {
         align-items: center
     }
@@ -347,7 +352,7 @@
     .title {
         @include h2;
         @include champagneText;
-        margin-bottom: 84px;
+        margin-bottom: 42px;
     }
 }
 

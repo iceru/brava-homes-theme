@@ -159,10 +159,10 @@ get_header();
                             achievement
                             of a lifetime.
                         </div>
-                        <div class="view">
+                        <a href="/unit/himalaya" class="view">
                             View Units
                             <img src="<?php bloginfo('template_directory');?>/images/chevron-right.png" alt="View">
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -188,10 +188,10 @@ get_header();
                             Nullam
                             efficitur consectetur libero, ac suscipit diam bibendum.
                         </div>
-                        <div class="view">
+                        <a href="/unit/diponegoro" class="view">
                             View Units
                             <img src="<?php bloginfo('template_directory');?>/images/chevron-right.png" alt="View">
-                        </div>
+                        </a>
                     </div>
                 </div>
                 <div class="col-12 col-lg-6 item-img">

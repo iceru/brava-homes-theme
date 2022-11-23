@@ -20,9 +20,9 @@ get_header();
                 <div class="subtitle">
                     Achieve Your Dream Home at
                 </div>
-                <h class="title">
+                <div class="title">
                     BRAVA Homes
-                </h>
+                </div>
                 <div class="text">
                     Brava means well done for your achievements in life. It is a reward for someone who already achieves
                     a
@@ -44,6 +44,9 @@ get_header();
                     alt="Thomas Elliot">
             </div>
             <div class="col-12 col-lg-6 designed-text">
+                <div class="ornament">
+                    <img src="<?php bloginfo('template_directory');?>/images/about/ornament-thomas.png">
+                </div>
                 <div class="bg-text">
                     <img class="w-100 thomas" src="<?php bloginfo('template_directory');?>/images/about/box-thomas.png">
                 </div>
