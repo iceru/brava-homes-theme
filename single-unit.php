@@ -158,6 +158,34 @@ for ($x = 0; $x <= 6; $x++) {
     </div>
 </div>
 
+<div class="contact">
+    <div class="graphics">
+        <img src="<?php bloginfo('template_directory');?>/images/graphics/end-page.png" alt="Explore">
+    </div>
+    <div class="container">
+        <div class="row ">
+            <div class="col-12 col-lg-6">
+                <div class="contact-text">
+                    <div class="subtitle">
+                        Inquiries
+                    </div>
+                    <div class="title">
+                        Begin Your Elevated Lifestyle Now
+                    </div>
+                    <div class="text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum elit a quam
+                        scelerisque,
+                        non
+                        fermentum nisl blandit. Fusce elementum nec mi sit amet maximus. In et turpis non justo
+                        maximus
+                        pharetra.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <script>
     $(document).ready(function () {
         $('.images-unit').slick({
