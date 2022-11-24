@@ -117,7 +117,7 @@ get_header();
             </div>
             <div class="content">
                 <div class="title">
-                    10 Minutes Away to
+                    10 Minutes Away to <br>
                     Soetta Airport
                 </div>
                 <div class="text">

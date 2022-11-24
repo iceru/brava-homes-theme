@@ -99,6 +99,8 @@
         position: relative;
         z-index: 1;
         padding: 100px;
+        width: 80%;
+        margin: auto;
 
         .title {
             @include h1;
