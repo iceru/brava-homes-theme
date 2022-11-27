@@ -16,7 +16,7 @@ get_header();
             alt="Background">
     </div>
     <div class="container">
-        <div class="d-flex">
+        <div class="d-flex flex-wrap">
             <div class="col-12 col-lg-7 item-text">
                 <div class="content">
                     <div class="bg-border">
@@ -85,11 +85,11 @@ get_header();
         </div>
     </div>
     <div class="row item">
-        <div class="col-12 col-lg-6 item-img">
+        <div class="col-12 col-lg-6 item-img order-2 order-lg-1">
             <img class="w-100" src="<?php bloginfo('template_directory');?>/images/facilities/places-2.png"
                 alt="Education">
         </div>
-        <div class="col-12 col-lg-6 item-text blue">
+        <div class="col-12 col-lg-6 item-text blue order-1 order-lg-2">
             <div class="bg">
                 <img class="w-100" src="<?php bloginfo('template_directory');?>/images/facilities/places-bg.png"
                     alt="Background">

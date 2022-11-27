@@ -1,5 +1,7 @@
 .about-header {
-    height: 100vh;
+    @include breakpoint(desktop) {
+        height: 100vh;
+    }
 
     .about-header-img {
         img {
@@ -24,6 +26,10 @@
 
         .content {
             padding: 96px;
+
+            @include breakpoint(untilTablet) {
+                padding: 64px 24px;
+            }
 
             .subtitle {
                 @include subtitle1;

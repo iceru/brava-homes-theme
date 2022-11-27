@@ -41,22 +41,27 @@
         top: 0;
         z-index: 2;
 
-        @include breakpoint(untilTablet) {
-            width: 100%;
-
-            .bg {
-                img {
-                    width: 100%;
-                }
-            }
-        }
-
         .logo {
             position: absolute;
             left: 37%;
             top: 23%;
             transform: translate(-50%, -50%);
         }
+
+        @include breakpoint(untilTablet) {
+            width: 90%;
+
+            .bg {
+                img {
+                    width: 100%;
+                }
+            }
+
+            .logo {
+                left: 30%;
+            }
+        }
+
     }
 
     .cta-video {
@@ -80,7 +85,7 @@
         z-index: 2;
         text-align: center;
 
-        @include breakpoint(mobileonly) {
+        @include breakpoint(untilTablet) {
             width: 100%;
         }
     }
@@ -116,7 +121,7 @@
         height: 100vh;
 
         @include breakpoint(untilTablet) {
-            height: 100%;
+            height: auto;
         }
 
         .item-text {
@@ -129,8 +134,8 @@
                 padding: 200px;
             }
 
-            @include breakpoint(mobileonly) {
-                padding: 48px 24px;
+            @include breakpoint(untilTablet) {
+                padding: 64px 24px;
             }
         }
 
@@ -150,13 +155,19 @@
 
                 img {
                     height: 100%;
-                    width: 50%;
+
+                    @include breakpoint(desktop) {
+                        width: 50%;
+                    }
+
                     object-fit: cover
                 }
             }
 
-            .item-text {
-                height: 100%;
+            @include breakpoint(desktop) {
+                .item-text {
+                    height: 100%;
+                }
             }
 
             .title {
@@ -199,6 +210,16 @@
             height: 100%;
             object-fit: cover;
             object-position: left;
+
+        }
+
+        @include breakpoint(untilTablet) {
+            height: 50vh;
+
+            img {
+                object-fit: cover;
+                object-position: top;
+            }
         }
     }
 }
@@ -218,7 +239,6 @@
 
         .ornament {
             position: absolute;
-            left: -60px;
             top: 0;
 
             &.diponegoro {
@@ -227,6 +247,16 @@
                 top: auto;
                 bottom: 70px;
             }
+
+            @include breakpoint(desktop) {
+
+                left: -60px;
+
+                &.diponegoro {
+                    right: -20px;
+                }
+            }
+
         }
 
         &:last-child {
@@ -246,6 +276,12 @@
 
             .bg-border {
                 @include bg;
+
+                @include breakpoint(untilTablet) {
+                    width: 95%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
 
                 img {
                     object-fit: contain;
@@ -267,6 +303,11 @@
                 margin: auto;
                 padding: 130px 0;
 
+                @include breakpoint(untilTablet) {
+                    width: 85%;
+                    padding: 70px 0;
+                }
+
                 &.diponegoro {
                     margin-left: 10%;
                     padding-bottom: 180px;
@@ -281,6 +322,10 @@
             display: inline-block;
             @include h2;
             @include champagneText;
+
+            @include breakpoint(untilTablet) {
+                margin-bottom: 50px;
+            }
 
             &::after {
                 height: 2px;
@@ -369,6 +414,10 @@
 
     .tour-text {
         padding-left: 4rem;
+
+        @include breakpoint(untilTablet) {
+            padding: 1rem 4rem;
+        }
     }
 
     .row {
@@ -388,8 +437,10 @@
     background-color: $lightgrey;
     z-index: -1;
 
-    .contact-text {
-        width: 70%;
+    @include breakpoint(desktop) {
+        .contact-text {
+            width: 70%;
+        }
     }
 
     .graphics {

@@ -102,6 +102,11 @@
         width: 80%;
         margin: auto;
 
+        @include breakpoint(untilTablet) {
+            padding: 64px 24px;
+            width: 100%;
+        }
+
         .title {
             @include h1;
             @include champagneText;

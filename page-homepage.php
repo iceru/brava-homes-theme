@@ -77,15 +77,14 @@ get_header();
                     </div>
                 </div>
                 <div class="row item orange">
-                    <div class="col-12 col-lg-6 item-img">
+                    <div class="col-12 col-lg-6 item-img order-2 order-lg-1">
                         <img src="<?php bloginfo('template_directory');?>/images/index/about-grid-2.png"
                             alt="Brava Homes">
                     </div>
-                    <div class="col-12 col-lg-6 item-text">
+                    <div class="col-12 col-lg-6 item-text order-1 order-lg-2">
                         <div class="bg">
                             <img src="<?php bloginfo('template_directory');?>/images/index/bg-grid-orange.png"
                                 alt="Brava Homes">
-
                         </div>
                         <div class="title">
                             The Home <br>
