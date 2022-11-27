@@ -25,6 +25,16 @@ nav.sidebar {
     .hamburger {
         cursor: pointer;
     }
+
+    @include breakpoint(mobileonly) {
+        width: 100%;
+        position: sticky;
+        height: 100%;
+
+        .bg {
+            display: none
+        }
+    }
 }
 
 .offcanvas-sidebar {

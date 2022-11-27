@@ -92,10 +92,12 @@ get_header();
                             of Dreams
                         </div>
                         <div class="text">
-                            Brava Homes are designed to fulfil the aspirations of many who defer their dreams of owning
-                            architecturally designed homes. We forward our customers’ aspirations and dreams into
-                            reality
-                            today. BRAVA Homes stands for ‘Today is Better Than Tomorrow!’
+                            Brava Homes epitomizes the modern definition of luxury living – We align our design to
+                            create not only ‘accessible luxury’ homes of good quality, but also functional and
+                            sustainable, value for money and yet proud to own and show for the owners.
+                            <br><br>
+                            Providing spacious living arrangement, tranquility in green urban open spaces and elegance,
+                            to add to the beauty pleasure created by a master architect Tom Elliott.
                         </div>
                     </div>
                 </div>
@@ -106,12 +108,12 @@ get_header();
                             of Luxury
                         </div>
                         <div class="text">
+                            Brava Homes epitomizes the modern definition of luxury living – We align our design to
+                            create not only ‘accessible luxury’ homes of good quality, but also functional and
+                            sustainable, value for money and yet proud to own and show for the owners.
+                            <br><br>
                             Providing spacious living arrangement, tranquility in green urban open spaces and elegance,
-                            to
-                            add to the beauty pleasure created by a master architect Tom Elliot. We align our design to
-                            create not only 'Accessible Luxury' homes of good quality, but also functional and
-                            sustainable,
-                            value for money, and yet proud to own and show for the owners.
+                            to add to the beauty pleasure created by a master architect Tom Elliott.
                         </div>
                     </div>
                     <div class="col-12 col-lg-6 item-img">

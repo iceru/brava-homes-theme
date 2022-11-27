@@ -41,6 +41,16 @@
         top: 0;
         z-index: 2;
 
+        @include breakpoint(untilTablet) {
+            width: 100%;
+
+            .bg {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
         .logo {
             position: absolute;
             left: 37%;
@@ -69,6 +79,10 @@
         @include h2;
         z-index: 2;
         text-align: center;
+
+        @include breakpoint(mobileonly) {
+            width: 100%;
+        }
     }
 
     .cta-logo-2 {
@@ -101,6 +115,10 @@
         align-items: center;
         height: 100vh;
 
+        @include breakpoint(untilTablet) {
+            height: 100%;
+        }
+
         .item-text {
             padding: 100px;
             display: flex;
@@ -109,6 +127,10 @@
 
             @include breakpoint(largeDesktop) {
                 padding: 200px;
+            }
+
+            @include breakpoint(mobileonly) {
+                padding: 48px 24px;
             }
         }
 
@@ -233,7 +255,11 @@
             .ornament-2 {
                 position: absolute;
                 bottom: 30px;
-                right: 25px;
+                right: 0;
+
+                @include breakpoint(largeDesktop) {
+                    right: 25px;
+                }
             }
 
             .content {
