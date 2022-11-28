@@ -168,7 +168,7 @@ get_header();
                 </div>
             </div>
             <div class="row unit">
-                <div class="col-12 col-lg-6 item-text">
+                <div class="col-12 col-lg-6 item-text order-2 order-lg-1">
                     <div class="bg-border">
                         <img src="<?php bloginfo('template_directory');?>/images/index/diponegoro-border.png"
                             alt="Background">
@@ -195,7 +195,7 @@ get_header();
                         </a>
                     </div>
                 </div>
-                <div class="col-12 col-lg-6 item-img">
+                <div class="col-12 col-lg-6 item-img order-1 order-lg-2">
                     <img src="<?php bloginfo('template_directory');?>/images/index/diponegoro.png"
                         alt="Brava @ Diponegoro">
                 </div>
@@ -230,10 +230,10 @@ get_header();
             <img src="<?php bloginfo('template_directory');?>/images/index/bg-360-tour.png" alt="360 Tour Background">
         </div>
         <div class="row">
-            <div class="col-12 col-lg-5 tour-img p-0">
+            <div class="col-12 col-md-6 lg-5 tour-img p-0">
                 <img src="<?php bloginfo('template_directory');?>/images/index/360-tour.png" alt="360 Tour">
             </div>
-            <div class="col-12 col-lg-7 tour-text">
+            <div class="col-12 col-md-6 lg-7 tour-text">
                 <div class="title">
                     TAKE A 360 <br>
                     TOUR OF BRAVA

@@ -130,7 +130,7 @@ for ($x = 0; $x <= 6; $x++) {
             </div>
         </div>
         <div class="row ms-3">
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-lg-6 item-container">
                 <div class="item">
                     <div class="img">
                         <img src="<?php echo get_field('testimony_1')['image'] ?>" alt="">
@@ -143,7 +143,7 @@ for ($x = 0; $x <= 6; $x++) {
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-lg-6 item-container">
                 <div class="item">
                     <div class="img">
                         <img src="<?php echo get_field('testimony_2')['image'] ?>" alt="">
