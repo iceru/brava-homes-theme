@@ -122,9 +122,15 @@
 }
 
 .about-grid {
+
     .item {
         align-items: center;
         height: 100vh;
+
+        &:first-child {
+
+            background-color: $lightgrey;
+        }
 
         @include breakpoint(untilTablet) {
             height: auto;
@@ -450,7 +456,6 @@
 .contact {
     position: relative;
     background-color: $lightgrey;
-    z-index: -1;
     padding: 64px 0;
 
     @include breakpoint(desktop) {
@@ -487,5 +492,40 @@
     .text {
         @include body1;
         text-align: justify;
+    }
+
+    .email {
+        .title {
+            @include subtitle1;
+            color: $primary;
+            margin-bottom: 24px;
+        }
+
+        .form-input {
+            padding: 13px 0;
+            border: none;
+            border-bottom: 1px solid $primary;
+            background-color: transparent;
+            margin-bottom: 28px;
+            width: 100%;
+
+            &::-webkit-input-placeholder {
+                text-transform: uppercase;
+                color: $text;
+                @include headButton;
+            }
+
+            &:-ms-input-placeholder {
+                color: $text;
+                text-transform: uppercase;
+                @include headButton;
+            }
+
+            &::placeholder {
+                text-transform: uppercase;
+                color: $text;
+                @include headButton;
+            }
+        }
     }
 }

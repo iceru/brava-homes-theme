@@ -184,6 +184,12 @@ for ($x = 0; $x <= 6; $x++) {
                     </div>
                 </div>
             </div>
+            <div class="col-12 col-lg-6 email">
+                <div class="title">
+                    Fill The Form
+                </div>
+                <?php echo apply_shortcodes( '[contact-form-7 id="139" title="Contact form 1"]') ?>
+            </div>
         </div>
     </div>
 </div>

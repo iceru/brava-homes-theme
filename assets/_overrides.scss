@@ -2,6 +2,7 @@
     border-radius: 0;
     background-color: transparent;
     padding: 13px 17px;
+    @include button;
 
     &.btn-primary {
         border: 1px solid #EFE2CF;
@@ -19,5 +20,12 @@
         img {
             margin-left: 8px;
         }
+    }
+
+    &.btn-outline-orange {
+        color: $primary;
+        background-color: transparent;
+        border: 1px solid $primary;
+        text-transform: uppercase;
     }
 }
