@@ -6,9 +6,13 @@
  */
 
 get_header();
-
+$count = 0;
 for ($x = 0; $x <= 6; $x++) {
-    ${'type'.$x} = get_field('types_'.$x);
+    $types = get_field('types_'.$x);
+    if(isset($types['title_type']) && $types['title_type'] !== '') {
+        ${'type'.$x} = get_field('types_'.$x);
+        $count++;
+    }
 }
 ?>
 <div class="unit-header">
@@ -35,7 +39,7 @@ for ($x = 0; $x <= 6; $x++) {
             <div class="col-12 col-lg-7">
                 <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                     <div class="name">Types</div>
-                    <?php for ($x = 1; $x < 7; $x++) {
+                    <?php for ($x = 1; $x < $count+1; $x++) {
                     ?>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link <?php echo $x === 1 ? 'active' : '' ?>" id="types-<?php echo $x ?>-tab"
@@ -48,7 +52,7 @@ for ($x = 0; $x <= 6; $x++) {
             </div>
         </div>
         <div class="tab-content" id="pills-tabContent">
-            <?php for ($x = 1; $x < 7; $x++) {
+            <?php for ($x = 1; $x < $count+1; $x++) {
                     ?>
             <div class="tab-pane fade show tab-<?php echo $x ?>  <?php echo $x === 1 ? 'active' : '' ?>"
                 id="types-<?php echo $x ?>" role="tabpanel" aria-labelledby="types-<?php echo $x ?>-tab" tabindex="0">
