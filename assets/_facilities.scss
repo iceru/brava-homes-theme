@@ -1,5 +1,7 @@
 .masterplan {
-    height: 100vh;
+    @include breakpoint(desktop) {
+        height: 100vh;
+    }
 
     img {
         width: 100%;
@@ -17,6 +19,18 @@
 
     .bg-border {
         @include bg;
+
+        &.mobile {
+            display: none;
+        }
+
+        @include breakpoint(untilTablet) {
+            display: none;
+
+            &.mobile {
+                display: block;
+            }
+        }
 
         img {
             object-fit: contain
@@ -45,6 +59,28 @@
         color: $lightgrey;
         text-align: justify;
         width: 70%;
+    }
+
+    @include breakpoint(untilTablet) {
+        padding: 64px 0;
+        padding-top: 32px;
+
+        .item-text {
+            margin-bottom: 1.5rem;
+        }
+
+        .content {
+            padding: 62px 24px;
+            padding-bottom: 120px;
+        }
+
+        .title {
+            margin-bottom: 32px;
+        }
+
+        .text {
+            width: 100%;
+        }
     }
 }
 
@@ -99,8 +135,11 @@
         position: relative;
         z-index: 1;
         padding: 100px;
-        width: 80%;
         margin: auto;
+
+        @include breakpoint(largeDesktop) {
+            width: 80%;
+        }
 
         @include breakpoint(untilTablet) {
             padding: 64px 24px;

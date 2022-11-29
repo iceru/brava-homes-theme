@@ -320,9 +320,37 @@
                     padding: 70px 0;
                 }
 
-                &.diponegoro {
+            }
+
+            &.diponegoro {
+                .bg-border {
+                    @include breakpoint(untilTablet) {
+                        display: none;
+                    }
+
+                    @include breakpoint(tablet) {
+                        display: block;
+                    }
+
+
+                    &.mobile {
+                        display: block;
+
+                        @include breakpoint(tablet) {
+                            display: none;
+                        }
+                    }
+                }
+
+                .content {
                     margin-left: 10%;
                     padding-bottom: 180px;
+
+                    @include breakpoint(untilTablet) {
+                        width: 90%;
+                        margin-left: 5%;
+                        padding-bottom: 120px;
+                    }
                 }
             }
         }
@@ -337,6 +365,8 @@
 
             @include breakpoint(untilTablet) {
                 margin-bottom: 50px;
+                font-size: 28px;
+                line-height: 38px;
             }
 
             &::after {
@@ -495,6 +525,10 @@
     }
 
     .email {
+        @include breakpoint(untilTablet) {
+            margin-top: 1.5rem;
+        }
+
         .title {
             @include subtitle1;
             color: $primary;

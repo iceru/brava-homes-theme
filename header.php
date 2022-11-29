@@ -71,15 +71,19 @@
 						endif;
 					?>
 						</a>
-						<div class="language">
-							<div class="item active">
-								EN
-							</div>
-							<div class="divider"></div>
-							<div class="item">
-								ID
-							</div>
-						</div>
+						<?php
+						// Loading WordPress Custom Menu (theme_location).
+						wp_nav_menu(
+							array(
+								'menu' => 'language',
+								'theme_location' => 'main-menu',
+								'container'      => '',
+								'menu_class'     => 'language',
+								'fallback_cb'    => 'WP_Bootstrap_Navwalker::fallback',
+								'walker'         => new WP_Bootstrap_Navwalker(),
+							)
+						);
+					?>
 					</div>
 
 					<div class="menu-container">

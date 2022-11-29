@@ -58,6 +58,11 @@ $bg-orange: #BE5D39;
     font-size: 48px;
     line-height: 59px;
 
+    @include breakpoint(untilTablet) {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
     @include breakpoint(largeDesktop) {
         font-size: 54px;
         line-height: 65px;
@@ -143,6 +148,7 @@ $bg-orange: #BE5D39;
     font-weight: 300;
     font-size: 14px;
     line-height: 19px;
+    text-align: justify;
 
     @include breakpoint(largeDesktop) {
         font-size: 16px;

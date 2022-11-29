@@ -137,7 +137,7 @@ get_header();
                 <div class="col-12 col-lg-6 item-img">
                     <img src="<?php bloginfo('template_directory');?>/images/index/himalaya.png" alt="Brava @ Himalaya">
                 </div>
-                <div class="col-12 col-lg-6 item-text">
+                <div class="col-12 col-lg-6 item-text ">
                     <div class="bg-border">
                         <img src="<?php bloginfo('template_directory');?>/images/index/himalaya-border.png"
                             alt="Background">
@@ -168,9 +168,13 @@ get_header();
                 </div>
             </div>
             <div class="row unit">
-                <div class="col-12 col-lg-6 item-text order-2 order-lg-1">
+                <div class="col-12 col-lg-6 item-text order-2 order-lg-1 diponegoro">
                     <div class="bg-border">
                         <img src="<?php bloginfo('template_directory');?>/images/index/diponegoro-border.png"
+                            alt="Background">
+                    </div>
+                    <div class="bg-border mobile">
+                        <img src="<?php bloginfo('template_directory');?>/images/index/diponegoro-border-mobile.png"
                             alt="Background">
                     </div>
                     <div class="ornament diponegoro">

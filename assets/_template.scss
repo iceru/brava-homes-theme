@@ -88,7 +88,7 @@ nav.sidebar {
             display: flex;
             align-items: center;
 
-            .item {
+            li {
                 background: linear-gradient(50deg, #B3A38B 0%, #EFE2CF 100%);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
@@ -100,17 +100,15 @@ nav.sidebar {
                 font-size: 12px;
                 line-height: 16px;
                 letter-spacing: 0.22em;
+                margin-bottom: 0;
 
                 &.active {
                     @include champagneText;
                 }
             }
 
-            .divider {
-                height: 16px;
-                width: 2px;
-                display: block;
-                background: $champagne;
+            #menu-item-154 {
+                pointer-events: none;
             }
         }
 

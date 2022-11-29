@@ -24,6 +24,11 @@ get_header();
                             src="<?php bloginfo('template_directory');?>/images/facilities/lippo-border.png"
                             alt="Background">
                     </div>
+                    <div class="bg-border mobile">
+                        <img class="w-100"
+                            src="<?php bloginfo('template_directory');?>/images/facilities/lippo-border-mobile.png"
+                            alt="Background">
+                    </div>
                     <div class="title">
                         At The Heart of Lippo Village Township
                     </div>
@@ -117,7 +122,7 @@ get_header();
             </div>
             <div class="content">
                 <div class="title">
-                    10 Minutes Away to <br>
+                    10 Minutes Away to
                     Soetta Airport
                 </div>
                 <div class="text">
