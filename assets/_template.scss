@@ -67,6 +67,10 @@ nav.sidebar {
         bottom: 0;
         height: 40%;
 
+        @include breakpoint(mobileonly) {
+            height: 35%;
+        }
+
         img {
             object-position: top;
         }

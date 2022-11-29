@@ -488,8 +488,13 @@
     background-color: $lightgrey;
     padding: 64px 0;
 
+    .container {
+        position: relative;
+        z-index: 2;
+    }
+
     @include breakpoint(desktop) {
-        padding: 100px 0 15vw;
+        padding: 100px 0;
 
         .contact-text {
             width: 70%;
@@ -498,14 +503,29 @@
 
     .graphics {
         left: 0;
-        bottom: -25%;
         position: absolute;
         width: 100%;
         z-index: 0;
+        bottom: -22%;
+        z-index: 1;
 
         img {
             width: 100%;
         }
+
+        @include breakpoint(untilTablet) {
+            bottom: -11%;
+
+            img {
+                width: 250%;
+                object-fit: cover;
+            }
+        }
+
+        @include breakpoint(largeDesktop) {
+            bottom: -27%;
+        }
+
     }
 
     .subtitle {

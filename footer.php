@@ -30,10 +30,10 @@
 								</div>
 								<ul>
 									<li>
-										<a href="">Diponegoro</a>
+										<a href="/unit/diponegoro">Diponegoro</a>
 									</li>
 									<li>
-										<a href="">Himalaya</a>
+										<a href="/unit/himalaya">Himalaya</a>
 									</li>
 								</ul>
 							</div>
@@ -43,7 +43,7 @@
 								</div>
 								<ul>
 									<li>
-										<a href="/">Location</a>
+										<a href="/location">Location</a>
 									</li>
 									<li>
 										<a href="">360 Tour</a>

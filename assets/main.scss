@@ -197,7 +197,9 @@ img {
 /* Main */
 
 #main {
-	@include breakpoint(tablet) {
+	overflow-x: hidden;
+
+	@include breakpoint(laptop) {
 		padding-left: 4.5rem;
 	}
 }
