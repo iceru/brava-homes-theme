@@ -66,10 +66,14 @@
 }
 
 .subsection {
-    padding: 112px;
+    padding: 64px 1rem;
     background-color: $bg-orange;
     text-align: center;
     position: relative;
+
+    @include breakpoint(desktop) {
+        padding: 112px;
+    }
 
     .bg {
         @include bg;
@@ -90,7 +94,7 @@
 
     .text {
         @include body1;
-        color: white;
+        color: $lightgrey;
     }
 }
 
@@ -117,6 +121,12 @@
         margin-bottom: 6px;
     }
 
+    @include breakpoint(untilTablet) {
+        .subtitle {
+            width: 90%;
+        }
+    }
+
     .title {
         @include h1;
         @include champagneText;
@@ -124,7 +134,7 @@
 
     .text {
         @include body1;
-        color: white;
+        color: $lightgrey;
     }
 }
 
@@ -153,12 +163,30 @@
             width: 100%;
         }
     }
+
+    @include breakpoint(untilTablet) {
+        padding-top: 32px;
+
+        .container {
+            .title {
+                position: relative;
+                padding-left: 1rem;
+                top: 0;
+                left: 0;
+                margin-bottom: 1rem;
+            }
+        }
+    }
 }
 
 .smart {
     background-color: $lightgrey;
     position: relative;
-    padding: 100px;
+    padding: 2rem 1rem;
+
+    @include breakpoint(desktop) {
+        padding: 100px;
+    }
 
     .bg {
         @include bg;
@@ -193,7 +221,12 @@
 
         .home-features {
             .item {
-                padding-right: 6rem;
+                margin-bottom: 2rem;
+
+                @include breakpoint(desktop) {
+                    padding-right: 6rem;
+                    margin-bottom: 0;
+                }
 
                 .img {
                     margin-bottom: 1rem;
@@ -260,7 +293,27 @@
 
         .text {
             @include body1;
-            color: white;
+            color: $lightgrey;
+        }
+    }
+
+    @include breakpoint(untilTablet) {
+        .bg {
+            width: 100%;
+        }
+
+        .gr-text {
+            padding: 32px 1rem;
+
+            .content {
+                height: 85%;
+                padding: 50px 27px;
+                padding-top: 73px;
+
+                .title {
+                    margin-bottom: 20px;
+                }
+            }
         }
     }
 }

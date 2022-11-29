@@ -114,7 +114,7 @@
                 margin-right: 22px;
                 text-transform: uppercase;
                 @include headButton;
-                color: white;
+                color: $lightgrey;
                 white-space: nowrap;
             }
         }
@@ -405,7 +405,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    color: white;
+    color: $lightgrey;
     height: 70vh;
     padding: 32px 0;
 
@@ -447,7 +447,7 @@
 
 #tour {
     position: relative;
-    color: white;
+    color: $lightgrey;
     padding-top: 62px;
 
     .bg {

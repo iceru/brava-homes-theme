@@ -39,7 +39,7 @@ nav.sidebar {
 
 .offcanvas-sidebar {
     background-color: $blue;
-    color: white;
+    color: $lightgrey;
 
     .offcanvas-body {
         padding: 40px !important;
@@ -129,6 +129,10 @@ nav.sidebar {
                 @include button;
                 font-weight: 700;
             }
+
+            .dropdown-item {
+                padding-bottom: 0;
+            }
         }
     }
 
@@ -215,7 +219,7 @@ nav.sidebar {
         .text,
         li a {
             @include body1;
-            color: white;
+            color: $lightgrey;
         }
 
         ul {
@@ -254,7 +258,7 @@ nav.sidebar {
 
     .footer-bottom {
         position: relative;
-        color: white;
+        color: $lightgrey;
         font-family: 'Avenir';
         font-style: normal;
         font-weight: 500;

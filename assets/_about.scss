@@ -155,7 +155,7 @@
 
     .text {
         @include body1;
-        color: white;
+        color: $lightgrey;
     }
 
     .images {

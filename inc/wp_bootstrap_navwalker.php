@@ -37,7 +37,7 @@ if ( ! class_exists( 'WP_Bootstrap_Navwalker' ) ) {
 		 * @param stdClass $args   An object of wp_nav_menu() arguments.
 		 */
 		public function start_lvl( &$output, $depth = 0, $args = null ) {
-			$output .= '<ul role="menu" class="dropdown-menu">';
+			$output .= '<ul role="menu" class="dropdown-menu show">';
 		}
 
 		/**
@@ -101,9 +101,9 @@ if ( ! class_exists( 'WP_Bootstrap_Navwalker' ) ) {
 				$atts['rel']    = ! empty( $item->xfn ) ? $item->xfn : '';
 				// If item has_children add atts to a.
 				if ( $args->has_children && 0 === $depth ) {
-					$atts['href']           = '#';
-					$atts['data-bs-toggle'] = 'dropdown';
-					$atts['class']          = 'nav-link dropdown-toggle';
+					$atts['href'] = ! empty( $item->url ) ? $item->url : '';
+					$atts['data-bs-hover'] = 'dropdown';
+					$atts['class']          = 'nav-link';
 					$atts['aria-expanded']  = 'false';
 				} else {
 					$atts['href'] = ! empty( $item->url ) ? $item->url : '';

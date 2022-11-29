@@ -59,7 +59,7 @@ get_header();
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-lg-6 mb-4 mb-lg-0">
                 <div class="subtitle">
                     Variety of Flexible Room Arrangement at
                 </div>
@@ -95,7 +95,7 @@ get_header();
     </div>
     <div class="container">
         <div class="row smart-header">
-            <div class="col-12 col-lg-4">
+            <div class="col-12 col-lg-4 mb-4 mb-lg-0">
                 <div class="subtitle">
                     Automated With
                 </div>
@@ -109,7 +109,8 @@ get_header();
                 </div>
             </div>
             <div class="col-12 col-lg-8 text-end">
-                <img src="<?php bloginfo('template_directory');?>/images/units/smart-home.png" alt="Smart Home">
+                <img class="w-100" src="<?php bloginfo('template_directory');?>/images/units/smart-home.png"
+                    alt="Smart Home">
             </div>
         </div>
         <div class="home-features">
