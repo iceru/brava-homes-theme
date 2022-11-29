@@ -81,6 +81,10 @@ nav.sidebar {
         filter: brightness(0) invert(1);
         top: 15px;
         right: 20px;
+
+        &:focus {
+            box-shadow: none;
+        }
     }
 
     .header {
