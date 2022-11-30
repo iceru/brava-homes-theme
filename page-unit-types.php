@@ -43,14 +43,17 @@ get_header();
     <div class="bg">
         <img src="<?php bloginfo('template_directory');?>/images/units/bg-subsection.png" alt="Background">
     </div>
-    <div class="content">
-        <div class="title">
-            A Private Enclave
-        </div>
-        <div class="text">
-            Be the proud owner of this premium cluster in a very artistically done private enclave with an impressive
-            design
-            from Tom Elliot and high-quality material selections that compose the state-of-the-art Brava Homes
+    <div class="container">
+        <div class="content">
+            <div class="title">
+                A Private Enclave
+            </div>
+            <div class="text">
+                Be the proud owner of this premium cluster in a very artistically done private enclave with an
+                impressive
+                design
+                from Tom Elliot and high-quality material selections that compose the state-of-the-art Brava Homes
+            </div>
         </div>
     </div>
 </div>

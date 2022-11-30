@@ -134,7 +134,7 @@ get_header();
                     <img src="<?php bloginfo('template_directory');?>/images/index/himalaya-ornament-1.png"
                         alt="Ornament">
                 </div>
-                <div class="col-12 col-lg-6 item-img">
+                <div class="col-12 col-lg-6 item-img mb-4 mb-lg-0">
                     <img src="<?php bloginfo('template_directory');?>/images/index/himalaya.png" alt="Brava @ Himalaya">
                 </div>
                 <div class="col-12 col-lg-6 item-text ">
@@ -199,7 +199,7 @@ get_header();
                         </a>
                     </div>
                 </div>
-                <div class="col-12 col-lg-6 item-img order-1 order-lg-2">
+                <div class="col-12 col-lg-6 item-img order-1 order-lg-2 mb-4 mb-lg-0">
                     <img src="<?php bloginfo('template_directory');?>/images/index/diponegoro.png"
                         alt="Brava @ Diponegoro">
                 </div>
