@@ -202,14 +202,29 @@ for ($x = 0; $x <= 6; $x++) {
     $(document).ready(function () {
         $('.images-unit').slick({
             infinite: true,
+            prevArrow: "<button type='button' class='slick-prev'><img src='http://brava.test/wp-content/themes/brava-homes/images/nav-left.png' /></button>",
+            nextArrow: "<button type='button' class='slick-next'><img src='http://brava.test/wp-content/themes/brava-homes/images/nav-right.png' /></button>",
         });
 
-        $('.items').slick();
+        $('.items').slick({
+            infinite: true,
+            prevArrow: "<button type='button' class='slick-prev'><img src='http://brava.test/wp-content/themes/brava-homes/images/nav-left.png' /></button>",
+            nextArrow: "<div id='nxt'><img src='http://brava.test/wp-content/themes/brava-homes/images/nav-right.png' /></div> ",
+        });
     });
 
     $('button[data-bs-toggle="pill"]').on('shown.bs.tab', function (e) {
         $('.images-unit').slick('setPosition');
     })
+
+    $(".item-img").hover(
+        function () {
+            $(this).addClass("hovered");
+        },
+        function () {
+            $(this).removeClass("hovered");
+        }
+    );
 </script>
 <?php
 get_footer();

@@ -200,6 +200,7 @@
     .title {
         @include h1;
         margin-bottom: 36px;
+        color: $blue;
     }
 
     .subtitle {
@@ -303,21 +304,27 @@
             .ornament-2 {
                 position: absolute;
                 bottom: 30px;
-                right: 0;
+                right: 30px;
 
-                @include breakpoint(largeDesktop) {
-                    right: 25px;
+                @include breakpoint(untilTablet) {
+                    right: 0;
                 }
             }
 
             .content {
-                width: 70%;
+                width: 64%;
                 margin: auto;
-                padding: 130px 0;
+                padding: 90px 0;
 
                 @include breakpoint(untilTablet) {
                     width: 85%;
                     padding: 70px 0;
+                }
+
+                @include breakpoint(largeDesktop) {
+                    padding: 106px 0;
+                    width: 64%;
+                    margin-left: 17%;
                 }
 
             }
@@ -506,7 +513,7 @@
         position: absolute;
         width: 100%;
         z-index: 0;
-        bottom: -22%;
+        bottom: 0;
         z-index: 1;
 
         img {
@@ -514,7 +521,6 @@
         }
 
         @include breakpoint(untilTablet) {
-            bottom: -11%;
 
             img {
                 width: 250%;
@@ -522,9 +528,6 @@
             }
         }
 
-        @include breakpoint(largeDesktop) {
-            bottom: -27%;
-        }
 
     }
 
@@ -581,5 +584,33 @@
                 @include headButton;
             }
         }
+    }
+}
+
+.container-404 {
+    min-height: 50vh;
+    background-color: $blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.error404 {
+
+    h1 {
+        @include h2;
+        @include champagneText;
+    }
+
+    p {
+        @include body1;
+        color: $lightgrey;
+    }
+
+    .back {
+        @include champagneText;
+        @include subtitle1;
     }
 }
