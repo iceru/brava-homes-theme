@@ -81,6 +81,8 @@ nav.sidebar {
         filter: brightness(0) invert(1);
         top: 15px;
         right: 20px;
+        width: .5rem;
+        height: .5rem;
 
         &:focus {
             box-shadow: none;

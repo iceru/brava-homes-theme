@@ -135,12 +135,12 @@ $recent_post = new WP_Query($args_recent);
                 <div class="col-12 item-container">
                     <div class="item">
                         <div class="row">
-                            <div class="col-4">
+                            <div class="col-12 col-lg-4 mb-4 mb-lg-0">
                                 <div class="img">
                                     <img src="<?php echo $url ?>" alt="">
                                 </div>
                             </div>
-                            <div class="col-8">
+                            <div class="col-12 col-lg-8">
                                 <div class="title">
                                     <?php echo get_the_title($post_id)?>
                                 </div>

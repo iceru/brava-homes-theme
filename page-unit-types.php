@@ -10,28 +10,32 @@ get_header();
 <div class="units-header">
     <div class="row">
         <div class="col-12 col-lg-6 item">
-            <div class="img">
-                <img class="w-100" src="<?php bloginfo('template_directory');?>/images/units/himalaya.png"
-                    alt="Himalaya">
-            </div>
-            <div class="hover">
-                <div class="text">
-                    BRAVA <br>
-                    Himalaya
+            <a href="/unit/himalaya">
+                <div class="img">
+                    <img class="w-100" src="<?php bloginfo('template_directory');?>/images/units/himalaya.png"
+                        alt="Himalaya">
                 </div>
-            </div>
+                <div class="hover">
+                    <div class="text">
+                        BRAVA <br>
+                        Himalaya
+                    </div>
+                </div>
+            </a>
         </div>
         <div class="col-12 col-lg-6 item">
-            <div class="img">
-                <img class="w-100" src="<?php bloginfo('template_directory');?>/images/units/diponegoro.png"
-                    alt="Diponegoro">
-            </div>
-            <div class="hover">
-                <div class="text">
-                    BRAVA <br>
-                    Diponegoro
+            <a href="/unit/diponegoro">
+                <div class="img">
+                    <img class="w-100" src="<?php bloginfo('template_directory');?>/images/units/diponegoro.png"
+                        alt="Diponegoro">
                 </div>
-            </div>
+                <div class="hover">
+                    <div class="text">
+                        BRAVA <br>
+                        Diponegoro
+                    </div>
+                </div>
+            </a>
         </div>
     </div>
 </div>
