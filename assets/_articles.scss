@@ -23,7 +23,11 @@
         .container {
             position: relative;
             z-index: 2;
-            padding-bottom: 20px;
+            padding-bottom: 40px;
+
+            @include breakpoint(untilTablet) {
+                padding-bottom: 20px;
+            }
         }
 
         .title {
