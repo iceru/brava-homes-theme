@@ -17,37 +17,48 @@
         @include bg;
     }
 
-    .bg-border {
-        @include bg;
-
-        &.mobile {
-            display: none;
-        }
-
-        @include breakpoint(untilLaptop) {
-            display: none;
-        }
-
-        @include breakpoint(mobileonly) {
-            &.mobile {
-                display: block;
-            }
-        }
-
-        img {
-            object-fit: contain
-        }
+    .item-text {
+        padding-right: 6rem;
+        padding-bottom: 100px;
     }
 
     .content {
-        height: 100%;
         margin: auto;
         position: relative;
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        padding: 0 15% 0 15%;
-        justify-content: center;
+        border: 3px solid $border-color;
+        padding: 128px 32px 80px 44px;
+        border-radius: 20px 20px 20px 0;
+        border-bottom: none;
+
+
+        .ornament {
+            position: absolute;
+            right: -24px;
+            bottom: 70px;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -99px;
+            left: -3px;
+            height: 100px;
+            width: 70%;
+            border: 3px solid $border-color;
+            border-radius: 0 0 20px 20px;
+            border-top: none;
+        }
+
+        &::before {
+            bottom: 2px;
+            content: "";
+            height: 3px;
+            position: absolute;
+            right: 6px;
+            width: 30%;
+            background-color: $border-color;
+        }
     }
 
     .title {

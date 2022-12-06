@@ -242,26 +242,39 @@
             .item {
                 margin-bottom: 2rem;
 
+
                 @include breakpoint(desktop) {
-                    padding-right: 6rem;
+                    &:first-child {
+                        padding-right: 7rem;
+                    }
+
+                    padding-right: 5rem;
                     margin-bottom: 0;
                 }
 
-                .img {
-                    margin-bottom: 1rem;
-                }
+                @include breakpoint(largeDesktop) {
+                    &:first-child {
+                        padding-right: 6rem;
+                    }
 
-                .title {
-                    margin-bottom: 21px;
-                    @include subtitle1;
-                    color: $primary;
+                    padding-right: 7rem;
                 }
+            }
 
-                .text {
-                    @include body1;
-                    color: $text;
-                    text-align: justify;
-                }
+            .img {
+                margin-bottom: 1rem;
+            }
+
+            .title {
+                margin-bottom: 21px;
+                @include subtitle1;
+                color: $primary;
+            }
+
+            .text {
+                @include body1;
+                color: $text;
+                text-align: justify;
             }
         }
     }

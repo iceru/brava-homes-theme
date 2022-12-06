@@ -8,7 +8,8 @@
 get_header(); 
 ?>
 <div class="masterplan">
-    <img class="w-100" src="<?php bloginfo('template_directory');?>/images/facilities/masterplan.png" alt="Masterplan">
+    <img class="w-100" src="<?php bloginfo('template_directory');?>/images/facilities/masterplan-2.png"
+        alt="Masterplan">
 </div>
 <div class="lippo position-relative">
     <div class="bg">
@@ -19,16 +20,6 @@ get_header();
         <div class="d-flex flex-wrap">
             <div class="col-12 col-lg-7 item-text">
                 <div class="content">
-                    <div class="bg-border">
-                        <img class="w-100"
-                            src="<?php bloginfo('template_directory');?>/images/facilities/lippo-border.png"
-                            alt="Background">
-                    </div>
-                    <div class="bg-border mobile">
-                        <img class="w-100"
-                            src="<?php bloginfo('template_directory');?>/images/facilities/lippo-border-mobile.png"
-                            alt="Background">
-                    </div>
                     <div class="title">
                         At The Heart of Lippo Village Township
                     </div>
@@ -36,6 +27,10 @@ get_header();
                         Located at the center of Lippo Village Central, an established township with comprehensive
                         facilities and amenities. Brava Homes connects you to our city’s primary education, lifestyle,
                         entertainment venues, and health care enclaves.
+                    </div>
+                    <div class="ornament">
+                        <img class="w-100" src="<?php bloginfo('template_directory');?>/images/ornament-triangle.png"
+                            alt="Ornament">
                     </div>
                 </div>
             </div>
@@ -54,7 +49,7 @@ get_header();
         <div class="row">
             <div class="col-12">
                 <div class="img">
-                    <img class="w-100" src="<?php bloginfo('template_directory');?>/images/facilities/map.png"
+                    <img class="w-100" src="<?php bloginfo('template_directory');?>/images/facilities/map-2.png"
                         alt="Brava Homes Map">
                 </div>
             </div>
