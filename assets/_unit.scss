@@ -101,6 +101,31 @@
             }
         }
 
+        .structure {
+            margin-top: 3rem;
+            width: 90%;
+
+            .item-structure {
+                margin-bottom: 12px;
+                padding-bottom: 12px;
+                border-bottom: 1px solid #B2A38B;
+                @include subtitle2;
+                color: $lightgrey;
+
+                &.number {
+                    font-size: 27px;
+                    margin-right: 27px;
+                    font-weight: 500;
+                    font-family: 'Quiche Display';
+                    @include champagneText;
+                }
+            }
+
+            @include breakpoint(desktop) {
+                margin-top: 84px;
+            }
+        }
+
         .header {
             margin-bottom: 65px;
             align-items: center;

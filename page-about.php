@@ -47,26 +47,31 @@ get_header();
                 <div class="ornament">
                     <img src="<?php bloginfo('template_directory');?>/images/about/ornament-thomas.png">
                 </div>
-                <div class="bg-text">
-                    <img class="w-100 thomas" src="<?php bloginfo('template_directory');?>/images/about/box-thomas.png">
-                </div>
                 <div class="content">
-                    <div class="title">
-                        Masterfully <br> Designed by <br> Thomas Elliott
+                    <div class="top-section">
+                        <div class="title">
+                            Masterfully <br> Designed by <br> Thomas Elliott
+                        </div>
                     </div>
-                    <div class="text">
-                        Providing spacious living arrangement, tranquility in green urban open spaces and elegance, to
-                        add
-                        to the beauty pleasure created by a master architect Tom Elliott. We align our design to create
-                        not
-                        only 'accrssible luxury' homes of good quality, but also functional and sustainable. value for
-                        money, and yet proud to own and show for the owners.
-                    </div>
-                    <div class="quotes">
-                        “I designed Brava when home becomes more important than ever, especially at this time where our
-                        home
-                        is not only a place for work and school but also a place for the entire family to rest and
-                        relax”
+                    <div class="bottom-section">
+                        <div class="text">
+                            Providing spacious living arrangement, tranquility in green urban open spaces and elegance,
+                            to
+                            add
+                            to the beauty pleasure created by a master architect Tom Elliott. We align our design to
+                            create
+                            not
+                            only 'accrssible luxury' homes of good quality, but also functional and sustainable. value
+                            for
+                            money, and yet proud to own and show for the owners.
+                        </div>
+                        <div class="quotes">
+                            “I designed Brava when home becomes more important than ever, especially at this time where
+                            our
+                            home
+                            is not only a place for work and school but also a place for the entire family to rest and
+                            relax”
+                        </div>
                     </div>
                 </div>
             </div>

@@ -115,7 +115,7 @@ get_header();
                     in simplifying everyday tasks for a more wholesome living
                 </div>
             </div>
-            <div class="col-12 col-lg-8 text-end">
+            <div class="col-12 col-lg-7 offset-lg-1 text-end">
                 <img class="w-100" src="<?php bloginfo('template_directory');?>/images/units/smart-home.png"
                     alt="Smart Home">
             </div>
@@ -179,6 +179,12 @@ get_header();
             <div class="content">
                 <div class="bg-border">
                     <img src="<?php bloginfo('template_directory');?>/images/units/gr-border.png" alt="Background">
+                </div>
+                <div class="ornament left">
+                    <img src="<?php bloginfo('template_directory');?>/images/ornament-triangle.png" alt="Ornament">
+                </div>
+                <div class="ornament right">
+                    <img src="<?php bloginfo('template_directory');?>/images/ornament-b-upside.png" alt="Ornament">
                 </div>
                 <div class="subtitle">
                     The Vastness of

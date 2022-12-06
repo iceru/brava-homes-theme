@@ -78,6 +78,44 @@ for ($x = 0; $x <= 6; $x++) {
                                 </div>
                             </div>
                         </div>
+                        <div class="structure">
+                            <?php if (${'type'.$x}['structure']['structure_1']) { ?>
+                            <div class="item-structure">
+                                <?php echo ${'type'.$x}['structure']['structure_1'] ?>
+                            </div>
+                            <?php } ?>
+                            <?php if (${'type'.$x}['structure']['structure_2']) { ?>
+                            <div class="item-structure">
+                                <?php echo ${'type'.$x}['structure']['structure_2'] ?>
+                            </div>
+                            <?php } ?>
+                            <?php if (${'type'.$x}['structure']['structure_3']) { ?>
+                            <div class="item-structure">
+                                <?php echo ${'type'.$x}['structure']['structure_3'] ?>
+                            </div>
+                            <?php } ?>
+                            <?php if (${'type'.$x}['structure']['structure_4']) { ?>
+                            <div class="item-structure">
+                                <?php echo ${'type'.$x}['structure']['structure_4'] ?>
+                            </div>
+                            <?php } ?>
+                            <?php if (${'type'.$x}['structure']['structure_5']) { ?>
+                            <div class="item-structure">
+                                <?php echo ${'type'.$x}['structure']['structure_5'] ?>
+                            </div>
+                            <?php } ?>
+                            <?php if (${'type'.$x}['structure']['structure_6']) { ?>
+                            <div class="item-structure">
+                                <?php echo ${'type'.$x}['structure']['structure_6'] ?>
+                            </div>
+                            <?php } ?>
+                            <?php if (${'type'.$x}['structure']['structure_7']) { ?>
+                            <div class="item-structure">
+                                <?php echo ${'type'.$x}['structure']['structure_7'] ?>
+                            </div>
+                            <?php } ?>
+                        </div>
+
                     </div>
                     <div class="col-12 col-lg-7">
                         <div class="images-unit">

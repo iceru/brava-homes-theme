@@ -30,7 +30,11 @@ get_header();
                     </div>
                 </div>
                 <div class="cta-video">
-                    <img src="<?php bloginfo('template_directory');?>/images/index/cta.gif" alt="Brava Homes">
+                    <video id="bgVideo" preload="true" autoplay loop muted>
+                        <source src="<?php bloginfo('template_directory');?>/videos/cta.mp4" type="video/mp4" />
+                        <source src="Home_Page.ogv" type="video/ogv" />
+                        <source src="Home_Page.webm" type="video/webm" />
+                    </video>
                 </div>
                 <div class="cta-text">
                     The New Definition of Luxury Living Masterfully Designed By Thom Elliot
@@ -138,65 +142,63 @@ get_header();
                     <img src="<?php bloginfo('template_directory');?>/images/index/himalaya.png" alt="Brava @ Himalaya">
                 </div>
                 <div class="col-12 col-lg-6 item-text ">
-                    <div class="bg-border">
-                        <img src="<?php bloginfo('template_directory');?>/images/index/himalaya-border.png"
-                            alt="Background">
-                    </div>
                     <div class="ornament-2">
                         <img src="<?php bloginfo('template_directory');?>/images/index/himalaya-ornament-2.png"
                             alt="Ornament">
                     </div>
                     <div class="content">
-                        <div class="title">
-                            BRAVA @ <br> HIMALAYA
+                        <div class="top-section">
+                            <div class="title">
+                                BRAVA @ <br> HIMALAYA
+                            </div>
                         </div>
-                        <div class="text">
-                            Brava Homes presents the first enclave of designer homes, Brava Himalaya. The best quality
-                            of
-                            contemporary living, composed from the best materials and set in a network of modern
-                            facilities.
-                            Crafted
-                            for those high-achievers in life with excellent taste, Brava Himalaya perfectly embodies the
-                            achievement
-                            of a lifetime.
+                        <div class="bottom-section">
+                            <div class="text">
+                                Brava Homes presents the first enclave of designer homes, Brava Himalaya. The best
+                                quality
+                                of
+                                contemporary living, composed from the best materials and set in a network of modern
+                                facilities.
+                                Crafted
+                                for those high-achievers in life with excellent taste, Brava Himalaya perfectly embodies
+                                the
+                                achievement
+                                of a lifetime.
+                            </div>
+                            <a href="/unit/himalaya" class="view">
+                                View Units
+                                <img src="<?php bloginfo('template_directory');?>/images/chevron-right.png" alt="View">
+                            </a>
                         </div>
-                        <a href="/unit/himalaya" class="view">
-                            View Units
-                            <img src="<?php bloginfo('template_directory');?>/images/chevron-right.png" alt="View">
-                        </a>
                     </div>
                 </div>
             </div>
             <div class="row unit">
                 <div class="col-12 col-lg-6 item-text order-2 order-lg-1 diponegoro">
-                    <div class="bg-border">
-                        <img src="<?php bloginfo('template_directory');?>/images/index/diponegoro-border.png"
-                            alt="Background">
-                    </div>
-                    <div class="bg-border mobile">
-                        <img src="<?php bloginfo('template_directory');?>/images/index/diponegoro-border-mobile.png"
-                            alt="Background">
-                    </div>
-                    <div class="ornament diponegoro">
+                    <div class="ornament">
                         <img src="<?php bloginfo('template_directory');?>/images/index/diponegoro-ornament-1.png"
                             alt="Ornament">
                     </div>
-                    <div class="content diponegoro">
-                        <div class="title">
-                            BRAVA @ <br> DIPONEGORO
+                    <div class="content">
+                        <div class="top-section">
+                            <div class="title">
+                                BRAVA @ <br> DIPONEGORO
+                            </div>
                         </div>
-                        <div class="text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae purus ut lorem
-                            varius
-                            rutrum
-                            sit amet gravida sem. Nunc lobortis rhoncus ex id dictum. Sed maximus tristique suscipit.
-                            Nullam
-                            efficitur consectetur libero, ac suscipit diam bibendum.
+                        <div class="bottom-section">
+                            <div class="text">
+                                Brava Homes presents the first enclave of designer homes, Brava Himalaya. The best
+                                quality of contemporary living, composed from the best materials and set in a network of
+                                modern facilities. Crafted for those high-achievers in life with excellent taste, Brava
+                                Himalaya perfectly embodies the achievement of a lifetime.
+                            </div>
+                            <a href="/unit/diponegoro" class="view">
+                                View Units
+                                <img src="<?php bloginfo('template_directory');?>/images/chevron-right.png" alt="View">
+                            </a>
+                            <div class="bottom left"></div>
+                            <div class="bottom right"></div>
                         </div>
-                        <a href="/unit/diponegoro" class="view">
-                            View Units
-                            <img src="<?php bloginfo('template_directory');?>/images/chevron-right.png" alt="View">
-                        </a>
                     </div>
                 </div>
                 <div class="col-12 col-lg-6 item-img order-1 order-lg-2 mb-4 mb-lg-0">

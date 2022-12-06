@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Avenir LT Std';
+    font-family: 'Avenir Light';
     src: url('AvenirLTStd-Light.eot');
     src: url('AvenirLTStd-Light.eot?#iefix') format('embedded-opentype'),
         url('AvenirLTStd-Light.woff2') format('woff2'),
@@ -25,7 +25,7 @@
 }
 
 @font-face {
-    font-family: 'Avenir LT Std';
+    font-family: 'Avenir Roman';
     src: url('AvenirLTStd-Roman.eot');
     src: url('AvenirLTStd-Roman.eot?#iefix') format('embedded-opentype'),
         url('AvenirLTStd-Roman.woff2') format('woff2'),
@@ -64,7 +64,7 @@
 }
 
 @font-face {
-    font-family: 'Avenir LT Std';
+    font-family: 'Avenir Book';
     src: url('AvenirLTStd-Book.eot');
     src: url('AvenirLTStd-Book.eot?#iefix') format('embedded-opentype'),
         url('AvenirLTStd-Book.woff2') format('woff2'),

@@ -81,7 +81,7 @@
         width: 100%;
         height: 100%;
 
-        img {
+        video {
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -263,30 +263,6 @@
             position: absolute;
             top: 0;
 
-            &.diponegoro {
-                right: 0;
-                left: auto;
-                top: auto;
-                bottom: 70px;
-
-                @include breakpoint(untilLaptop) {
-                    right: 45px;
-                }
-
-                @include breakpoint(mobileonly) {
-                    right: 0;
-                }
-            }
-
-            @include breakpoint(desktop) {
-
-                left: -60px;
-
-                &.diponegoro {
-                    right: -20px;
-                }
-            }
-
 
         }
 
@@ -321,8 +297,9 @@
 
             .ornament-2 {
                 position: absolute;
-                bottom: 30px;
-                right: 30px;
+                bottom: 45px;
+                right: 45px;
+                z-index: 5;
 
                 @include breakpoint(untilTablet) {
                     right: 0;
@@ -330,25 +307,58 @@
             }
 
             .content {
-                width: 64%;
+                width: 80%;
                 margin: auto;
-                padding: 90px 0;
 
-                @include breakpoint(mobileonly) {
-                    width: 85%;
-                    padding: 70px 0;
+                .top-section {
+                    border: 2px solid $border-color;
+                    border-radius: 20px 20px 0 0;
+                    padding: 80px 30px 10px 55px;
+                    width: 70%;
+                    z-index: 3;
+                    position: relative;
+                    border-bottom: none;
                 }
 
-                @include breakpoint(untilLaptop) {
-                    width: 55%;
+                .bottom-section {
+                    padding: 60px;
+                    padding-left: 55px;
+                    border-radius: 0 20px 20px 20px;
+                    border: 2px solid $border-color;
+                    z-index: 2;
+                    position: relative;
+                    border-top: none;
+
+                    &:after {
+                        background-color: $border-color;
+                        content: "";
+                        height: 2px;
+                        position: absolute;
+                        right: 10px;
+                        top: 0px;
+                        width: 28%;
+                    }
                 }
 
-                @include breakpoint(largeDesktop) {
-                    padding: 106px 0;
-                    width: 64%;
-                    margin-left: 17%;
-                }
+                @include breakpoint(untilTablet) {
+                    width: 90%;
 
+                    .top-section {
+                        padding: 60px 30px 10px 35px;
+                        width: 80%;
+                    }
+
+                    .bottom-section {
+
+                        &::after {
+                            width: 17%;
+                        }
+
+                        padding: 40px;
+                        padding-left: 35px;
+                        padding-right: 35px;
+                    }
+                }
             }
 
             &.diponegoro {
@@ -371,34 +381,86 @@
                     }
                 }
 
-                .content {
-                    margin-left: 10%;
-                    padding-bottom: 180px;
+                .ornament {
+                    right: 0;
+                    left: auto;
+                    top: auto;
+                    bottom: 160px;
+                    position: absolute;
+                    z-index: 5;
 
                     @include breakpoint(untilLaptop) {
-                        margin-left: 15%;
+                        right: 45px;
                     }
 
                     @include breakpoint(mobileonly) {
-                        width: 90%;
-                        margin-left: 5%;
-                        padding-bottom: 120px;
+                        right: 0;
                     }
+                }
+
+                .content {
+                    padding-bottom: 180px;
+                    width: 90%;
+                    margin: auto;
+
+                    .top-section {
+                        width: 80%;
+                    }
+
+                    @include breakpoint(untilTablet) {
+                        width: 95%;
+                    }
+
+                    .bottom-section {
+                        border-bottom: none;
+                        border-radius: 0 20px 0 0;
+
+                        &::after {
+                            width: 17%;
+                        }
+
+                        &::before {
+                            content: '';
+                            bottom: 0;
+                            width: calc(100% - 152px);
+                            left: 50%;
+                            transform: translateX(-50%);
+                            height: 2px;
+                            background-color: $border-color;
+                            position: absolute;
+                        }
+
+                        .bottom {
+                            height: 80px;
+                            width: 80px;
+                            position: absolute;
+                            left: -2px;
+                            bottom: -80px;
+                            border: 2px solid $border-color;
+                            border-radius: 0 0 20px 20px;
+                            border-top: none;
+
+                            &.right {
+                                left: auto;
+                                right: -2px;
+                            }
+                        }
+                    }
+
 
                 }
             }
         }
 
         .title {
-            padding-bottom: 16px;
-            margin-bottom: 90px;
             position: relative;
             display: inline-block;
+            padding-bottom: 16px;
             @include h2;
             @include champagneText;
 
             @include breakpoint(untilTablet) {
-                margin-bottom: 50px;
+                margin-bottom: 20px;
                 font-size: 28px;
                 line-height: 38px;
             }
@@ -426,6 +488,7 @@
             align-items: center;
             text-transform: uppercase;
             @include goldText;
+            @include button;
 
             img {
                 margin-left: 8px;

@@ -7,6 +7,14 @@
         padding: 0;
         position: relative;
 
+        &:first-child {
+            margin-right: -1px;
+        }
+
+        &:last-child {
+            margin-left: -1px;
+        }
+
         &:hover {
             &::after {
                 opacity: 0.7;
@@ -97,6 +105,11 @@
         @include body1;
         text-align: center;
         color: $lightgrey;
+
+        @include breakpoint(desktop) {
+            width: 70%;
+            margin: auto;
+        }
     }
 }
 
@@ -137,6 +150,10 @@
     .text {
         @include body1;
         color: $lightgrey;
+
+        @include breakpoint(largeDesktop) {
+            width: 80%;
+        }
     }
 }
 
@@ -267,6 +284,20 @@
         align-items: center;
         padding: 60px;
         z-index: 1;
+
+        .ornament {
+            position: absolute;
+
+            &.left {
+                top: 20px;
+                left: -24px;
+            }
+
+            &.right {
+                bottom: 20px;
+                right: -24px;
+            }
+        }
 
         .content {
             position: relative;

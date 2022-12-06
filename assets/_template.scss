@@ -90,10 +90,17 @@ nav.sidebar {
         }
     }
 
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
     .header {
         margin-bottom: 64px;
         display: flex;
         justify-content: space-between;
+
 
         .language {
             display: flex;
@@ -105,12 +112,7 @@ nav.sidebar {
                 -webkit-text-fill-color: transparent;
                 background-clip: text;
                 padding: 0 8px;
-                font-family: 'Avenir';
-                font-style: normal;
-                font-weight: 500;
-                font-size: 12px;
-                line-height: 16px;
-                letter-spacing: 0.22em;
+                @include button;
                 margin-bottom: 0;
 
                 &.active {
@@ -126,25 +128,28 @@ nav.sidebar {
 
     }
 
-    ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
+    .menu-container {
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
 
-        li {
-            margin-bottom: 24px;
+            li {
+                margin-bottom: 24px;
 
-            a {
-                @include champagneText;
-                text-transform: uppercase;
-                @include button;
-                font-weight: 700;
-            }
+                a {
+                    @include champagneText;
+                    text-transform: uppercase;
+                    @include button;
+                    font-weight: 700;
+                }
 
-            .dropdown-item {
-                padding-bottom: 0;
+                .dropdown-item {
+                    padding-bottom: 0;
+                }
             }
         }
+
     }
 
     .bottom-section {
