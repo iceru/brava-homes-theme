@@ -92,12 +92,6 @@
                 }
             }
 
-            @include breakpoint(untilLaptop) {
-                .bg-text {
-                    display: none;
-                }
-            }
-
             .top-section {
                 padding: 31px;
                 padding-left: 62px;
@@ -124,7 +118,35 @@
                     position: absolute;
                     right: 10px;
                     top: 0px;
-                    width: 28%;
+                    width: 27%;
+                }
+            }
+
+            @include breakpoint(untilLaptop) {
+                margin-top: 2rem;
+
+                .ornament {
+                    bottom: -20px;
+                    right: 30px;
+                }
+
+                .bg-text {
+                    display: none;
+                }
+
+                .top-section {
+                    width: 90%;
+                    padding: 30px 20px 0 32px;
+                }
+
+                .bottom-section {
+                    padding: 30px;
+                    padding-left: 32px;
+                    padding-right: 20px;
+
+                    &:after {
+                        width: 7.25%;
+                    }
                 }
             }
 
@@ -173,7 +195,15 @@
     background-color: $bg-orange;
 
     .container {
-        padding: 100px 0;
+        padding: 60px 1rem;
+
+    }
+
+    @include breakpoint(desktop) {
+
+        .container {
+            padding: 100px 0;
+        }
     }
 
     .row {
