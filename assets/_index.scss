@@ -311,7 +311,7 @@
                 margin: auto;
 
                 .top-section {
-                    border: 2px solid $border-color;
+                    border: 3px solid $border-color;
                     border-radius: 20px 20px 0 0;
                     padding: 80px 30px 10px 55px;
                     width: 70%;
@@ -324,7 +324,7 @@
                     padding: 60px;
                     padding-left: 55px;
                     border-radius: 0 20px 20px 20px;
-                    border: 2px solid $border-color;
+                    border: 3px solid $border-color;
                     z-index: 2;
                     position: relative;
                     border-top: none;
@@ -332,7 +332,7 @@
                     &:after {
                         background-color: $border-color;
                         content: "";
-                        height: 2px;
+                        height: 3px;
                         position: absolute;
                         right: 10px;
                         top: 0px;
@@ -416,7 +416,7 @@
                         border-radius: 0 20px 0 0;
 
                         &::after {
-                            width: 17%;
+                            width: 18%;
                         }
 
                         &::before {
@@ -425,7 +425,7 @@
                             width: calc(100% - 152px);
                             left: 50%;
                             transform: translateX(-50%);
-                            height: 2px;
+                            height: 3px;
                             background-color: $border-color;
                             position: absolute;
                         }
@@ -434,15 +434,15 @@
                             height: 80px;
                             width: 80px;
                             position: absolute;
-                            left: -2px;
+                            left: -3px;
                             bottom: -80px;
-                            border: 2px solid $border-color;
+                            border: 3px solid $border-color;
                             border-radius: 0 0 20px 20px;
                             border-top: none;
 
                             &.right {
                                 left: auto;
-                                right: -2px;
+                                right: -3px;
                             }
                         }
                     }
