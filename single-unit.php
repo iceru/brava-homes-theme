@@ -81,37 +81,58 @@ for ($x = 0; $x <= 6; $x++) {
                         <div class="structure">
                             <?php if (${'type'.$x}['structure']['structure_1']) { ?>
                             <div class="item-structure">
-                                <?php echo ${'type'.$x}['structure']['structure_1'] ?>
+                                <div class="number">
+                                    <?php echo ${'type'.$x}['structure']['structure_1']['count'] ?>
+                                </div>
+                                <?php echo ${'type'.$x}['structure']['structure_1']['name'] ?>
                             </div>
                             <?php } ?>
                             <?php if (${'type'.$x}['structure']['structure_2']) { ?>
                             <div class="item-structure">
-                                <?php echo ${'type'.$x}['structure']['structure_2'] ?>
+                                <div class="number">
+                                    <?php echo ${'type'.$x}['structure']['structure_2']['count'] ?>
+                                </div>
+                                <?php echo ${'type'.$x}['structure']['structure_2']['name'] ?>
                             </div>
                             <?php } ?>
                             <?php if (${'type'.$x}['structure']['structure_3']) { ?>
                             <div class="item-structure">
-                                <?php echo ${'type'.$x}['structure']['structure_3'] ?>
+                                <div class="number">
+                                    <?php echo ${'type'.$x}['structure']['structure_3']['count'] ?>
+                                </div>
+                                <?php echo ${'type'.$x}['structure']['structure_3']['name'] ?>
                             </div>
                             <?php } ?>
                             <?php if (${'type'.$x}['structure']['structure_4']) { ?>
                             <div class="item-structure">
-                                <?php echo ${'type'.$x}['structure']['structure_4'] ?>
+                                <div class="number">
+                                    <?php echo ${'type'.$x}['structure']['structure_4']['count'] ?>
+                                </div>
+                                <?php echo ${'type'.$x}['structure']['structure_4']['name'] ?>
                             </div>
                             <?php } ?>
                             <?php if (${'type'.$x}['structure']['structure_5']) { ?>
                             <div class="item-structure">
-                                <?php echo ${'type'.$x}['structure']['structure_5'] ?>
+                                <div class="number">
+                                    <?php echo ${'type'.$x}['structure']['structure_5']['count'] ?>
+                                </div>
+                                <?php echo ${'type'.$x}['structure']['structure_5']['name'] ?>
                             </div>
                             <?php } ?>
                             <?php if (${'type'.$x}['structure']['structure_6']) { ?>
                             <div class="item-structure">
-                                <?php echo ${'type'.$x}['structure']['structure_6'] ?>
+                                <div class="number">
+                                    <?php echo ${'type'.$x}['structure']['structure_6']['count'] ?>
+                                </div>
+                                <?php echo ${'type'.$x}['structure']['structure_6']['name'] ?>
                             </div>
                             <?php } ?>
-                            <?php if (${'type'.$x}['structure']['structure_7']) { ?>
+                            <?php if (${'type'.$x}['structure']['structure_7']['count']) { ?>
                             <div class="item-structure">
-                                <?php echo ${'type'.$x}['structure']['structure_7'] ?>
+                                <div class="number">
+                                    <?php echo ${'type'.$x}['structure']['structure_7']['count'] ?>
+                                </div>
+                                <?php echo ${'type'.$x}['structure']['structure_7']['name'] ?>
                             </div>
                             <?php } ?>
                         </div>

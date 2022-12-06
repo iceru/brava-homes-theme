@@ -41,6 +41,10 @@
     &::before {
         display: none;
     }
+
+    @include breakpoint(untilLaptop) {
+        left: 1rem;
+    }
 }
 
 .slick-next {
@@ -48,6 +52,10 @@
 
     &::before {
         display: none;
+    }
+
+    @include breakpoint(untilLaptop) {
+        right: 1rem;
     }
 }
 
@@ -111,12 +119,16 @@
                 border-bottom: 1px solid #B2A38B;
                 @include subtitle2;
                 color: $lightgrey;
+                display: flex;
+                align-items: center;
 
-                &.number {
+                .number {
                     font-size: 27px;
                     margin-right: 27px;
+                    line-height: 28px;
                     font-weight: 500;
                     font-family: 'Quiche Display';
+                    width: 15px;
                     @include champagneText;
                 }
             }
@@ -203,13 +215,18 @@
             height: 100%;
         }
 
+        .slick-prev {
+            display: none !important;
+        }
+
         #nxt {
             position: absolute;
             height: 100%;
-            width: 15%;
+            width: 30%;
             right: 0;
             top: 50%;
             transform: translateY(-50%);
+            cursor: pointer;
 
             img {
                 position: absolute;
