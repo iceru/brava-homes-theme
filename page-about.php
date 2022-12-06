@@ -88,10 +88,9 @@ get_header();
             </div>
             <div class="col-12 col-lg-8">
                 <div class="text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et erat porta, imperdiet lectus
-                    finibus,
-                    rhoncus nunc. Nam vitae dignissim ex. Pellentesque et felis ac metus interdum maximus id id
-                    augue.
+                    Brava provides you with a four to five-room option depending on your needs and requirements. This
+                    feature will enable you to convert two adjacent rooms into one for a bigger space or keep it as it
+                    is for more privacy.
                 </div>
             </div>
         </div>

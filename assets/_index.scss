@@ -648,29 +648,40 @@
             margin-bottom: 24px;
         }
 
+        p {
+            margin: 0;
+        }
+
+        .btn {
+            padding: 10px 14px;
+        }
+
         .form-input {
             padding: 13px 0;
             border: none;
             border-bottom: 1px solid $primary;
             background-color: transparent;
-            margin-bottom: 28px;
+            margin-bottom: 25px;
             width: 100%;
 
             &::-webkit-input-placeholder {
                 text-transform: uppercase;
                 color: $text;
                 @include headButton;
+                opacity: 0.5;
             }
 
             &:-ms-input-placeholder {
                 color: $text;
                 text-transform: uppercase;
+                opacity: 0.5;
                 @include headButton;
             }
 
             &::placeholder {
                 text-transform: uppercase;
                 color: $text;
+                opacity: 0.5;
                 @include headButton;
             }
         }

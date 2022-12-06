@@ -95,12 +95,9 @@ get_header();
                             of Dreams
                         </div>
                         <div class="text">
-                            Brava Homes epitomizes the modern definition of luxury living – We align our design to
-                            create not only ‘accessible luxury’ homes of good quality, but also functional and
-                            sustainable, value for money and yet proud to own and show for the owners.
-                            <br><br>
-                            Providing spacious living arrangement, tranquility in green urban open spaces and elegance,
-                            to add to the beauty pleasure created by a master architect Tom Elliott.
+                            Brava Homes are designed to fulfil the aspirations of many who defer their dreams of owning
+                            architecturally designed homes. We forward our customers’ aspirations and dreams into
+                            reality today. BRAVA Homes stands for ‘Today is Better Than Tomorrow!’
                         </div>
                     </div>
                 </div>
@@ -111,12 +108,10 @@ get_header();
                             of Luxury
                         </div>
                         <div class="text">
-                            Brava Homes epitomizes the modern definition of luxury living – We align our design to
-                            create not only ‘accessible luxury’ homes of good quality, but also functional and
-                            sustainable, value for money and yet proud to own and show for the owners.
-                            <br><br>
                             Providing spacious living arrangement, tranquility in green urban open spaces and elegance,
-                            to add to the beauty pleasure created by a master architect Tom Elliott.
+                            to add to the beauty pleasure created by a master architect Tom Elliot. We align our design
+                            to create not only 'Accessible Luxury' homes of good quality, but also functional and
+                            sustainable, value for money, and yet proud to own and show for the owners.
                         </div>
                     </div>
                     <div class="col-12 col-lg-6 item-img">
@@ -286,5 +281,13 @@ get_header();
         </div>
     </div>
 </div>
+
+<!-- <script>
+    $(document).ready(function () {
+        $('.email .btn-outline-orange').append(
+            '<img src="http://brava.test/wp-content/themes/brava-homes/images/chevron-right.png" alt="Chevron">'
+            )
+    });
+</script> -->
 <?php
 get_footer();

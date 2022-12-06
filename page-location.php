@@ -115,7 +115,7 @@ get_header();
                 <img class="w-100" src="<?php bloginfo('template_directory');?>/images/facilities/places-bg.png"
                     alt="Background">
             </div>
-            <div class="content">
+            <div class="content airport">
                 <div class="title">
                     10 Minutes Away to
                     Soetta Airport

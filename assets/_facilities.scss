@@ -150,6 +150,14 @@
         padding: 100px;
         margin: auto;
 
+        &.airport {
+            @include breakpoint(desktop) {
+                .text {
+                    width: 80%;
+                }
+            }
+        }
+
         @include breakpoint(largeDesktop) {
             width: 80%;
         }
