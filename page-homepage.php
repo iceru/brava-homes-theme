@@ -206,7 +206,7 @@ get_header();
 
     <div class="amenities" id="amenities">
         <div class="bg">
-            <img src="<?php bloginfo('template_directory');?>/images/index/amenities.png"
+            <img src="<?php bloginfo('template_directory');?>/images/index/amenities-2.jpeg"
                 alt="Minutes to Amenities Background">
         </div>
         <div class="container">
@@ -281,13 +281,5 @@ get_header();
         </div>
     </div>
 </div>
-
-<!-- <script>
-    $(document).ready(function () {
-        $('.email .btn-outline-orange').append(
-            '<img src="http://brava.test/wp-content/themes/brava-homes/images/chevron-right.png" alt="Chevron">'
-            )
-    });
-</script> -->
 <?php
 get_footer();
