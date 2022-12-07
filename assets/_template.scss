@@ -114,10 +114,12 @@ nav.sidebar {
                 padding: 0 8px;
                 @include button;
                 margin-bottom: 0;
+            }
 
-                &.active {
-                    @include champagneText;
-                }
+
+            .current-language-menu-item {
+                @include champagneText;
+                font-weight: 700;
             }
 
             #menu-item-154 {
