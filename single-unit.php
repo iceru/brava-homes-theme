@@ -259,7 +259,8 @@ for ($x = 0; $x <= 6; $x++) {
 
 <script>
     $(document).ready(function () {
-        const templateDirectory = 'https://phpstack-866240-3091594.cloudwaysapps.com/wp-content/themes/brava-homes';
+        const templateDirectory =
+            'https://phpstack-866240-3091594.cloudwaysapps.com/wp-content/themes/brava-homes';
         $('.images-unit').slick({
             infinite: true,
             prevArrow: `<button type='button' class='slick-prev'><img src='${templateDirectory}/images/nav-left.png' /></button>`,
