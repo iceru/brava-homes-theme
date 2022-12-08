@@ -231,9 +231,10 @@
             margin-right: 0;
         }
 
-        .item {
+        .item-img {
             position: relative;
             padding-top: 66%;
+            display: block;
 
             img {
                 position: absolute;

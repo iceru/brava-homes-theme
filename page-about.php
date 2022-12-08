@@ -98,64 +98,76 @@ get_header();
     <div class="images">
         <div class="row">
             <div class="col-6 col-lg-3">
-                <div class="item"><img class="w-100"
-                        src="<?php bloginfo('template_directory');?>/images/about/gallery-1.jpg" alt="Gallery">
-                </div>
+                <a href="<?php bloginfo('template_directory');?>/images/about/gallery-1.jpg" class="item-img"><img
+                        class="w-100" src="<?php bloginfo('template_directory');?>/images/about/gallery-1.jpg"
+                        alt="Gallery">
+                </a>
             </div>
             <div class="col-6 col-lg-3">
-                <div class="item"><img class="w-100"
-                        src="<?php bloginfo('template_directory');?>/images/about/gallery-2.jpg" alt="Gallery">
-                </div>
+                <a href="<?php bloginfo('template_directory');?>/images/about/gallery-2.jpg" class="item-img"><img
+                        class="w-100" src="<?php bloginfo('template_directory');?>/images/about/gallery-2.jpg"
+                        alt="Gallery">
+                </a>
             </div>
             <div class="col-6 col-lg-3">
-                <div class="item"><img class="w-100"
-                        src="<?php bloginfo('template_directory');?>/images/about/gallery-3.jpg" alt="Gallery">
-                </div>
+                <a href="<?php bloginfo('template_directory');?>/images/about/gallery-3.jpg" class="item-img"><img
+                        class="w-100" src="<?php bloginfo('template_directory');?>/images/about/gallery-3.jpg"
+                        alt="Gallery">
+                </a>
             </div>
             <div class="col-6 col-lg-3">
-                <div class="item"><img class="w-100"
-                        src="<?php bloginfo('template_directory');?>/images/about/gallery-4.jpg" alt="Gallery">
-                </div>
+                <a href="<?php bloginfo('template_directory');?>/images/about/gallery-4.jpg" class="item-img"><img
+                        class="w-100" src="<?php bloginfo('template_directory');?>/images/about/gallery-4.jpg"
+                        alt="Gallery">
+                </a>
             </div>
             <div class="col-6 col-lg-3">
-                <div class="item"><img class="w-100"
-                        src="<?php bloginfo('template_directory');?>/images/about/gallery-5.jpg" alt="Gallery">
-                </div>
+                <a href="<?php bloginfo('template_directory');?>/images/about/gallery-5.jpg" class="item-img"><img
+                        class="w-100" src="<?php bloginfo('template_directory');?>/images/about/gallery-5.jpg"
+                        alt="Gallery">
+                </a>
             </div>
             <div class="col-6 col-lg-3">
-                <div class="item"><img class="w-100"
-                        src="<?php bloginfo('template_directory');?>/images/about/gallery-6.jpg" alt="Gallery">
-                </div>
+                <a href="<?php bloginfo('template_directory');?>/images/about/gallery-6.jpg" class="item-img"><img
+                        class="w-100" src="<?php bloginfo('template_directory');?>/images/about/gallery-6.jpg"
+                        alt="Gallery">
+                </a>
             </div>
             <div class="col-6 col-lg-3">
-                <div class="item"><img class="w-100"
-                        src="<?php bloginfo('template_directory');?>/images/about/gallery-7.jpg" alt="Gallery">
-                </div>
+                <a href="<?php bloginfo('template_directory');?>/images/about/gallery-7.jpg" class="item-img"><img
+                        class="w-100" src="<?php bloginfo('template_directory');?>/images/about/gallery-7.jpg"
+                        alt="Gallery">
+                </a>
             </div>
             <div class="col-6 col-lg-3">
-                <div class="item"><img class="w-100"
-                        src="<?php bloginfo('template_directory');?>/images/about/gallery-8.png" alt="Gallery">
-                </div>
+                <a href="<?php bloginfo('template_directory');?>/images/about/gallery-8.jpg" class="item-img"><img
+                        class="w-100" src="<?php bloginfo('template_directory');?>/images/about/gallery-8.png"
+                        alt="Gallery">
+                </a>
             </div>
             <div class="col-6 col-lg-3">
-                <div class="item"><img class="w-100"
-                        src="<?php bloginfo('template_directory');?>/images/about/gallery-9.jpg" alt="Gallery">
-                </div>
+                <a href="<?php bloginfo('template_directory');?>/images/about/gallery-9.jpg" class="item-img"><img
+                        class="w-100" src="<?php bloginfo('template_directory');?>/images/about/gallery-9.jpg"
+                        alt="Gallery">
+                </a>
             </div>
             <div class="col-6 col-lg-3">
-                <div class="item"><img class="w-100"
-                        src="<?php bloginfo('template_directory');?>/images/about/gallery-10.jpg" alt="Gallery">
-                </div>
+                <a href="<?php bloginfo('template_directory');?>/images/about/gallery-10.jpg" class="item-img"><img
+                        class="w-100" src="<?php bloginfo('template_directory');?>/images/about/gallery-10.jpg"
+                        alt="Gallery">
+                </a>
             </div>
             <div class="col-6 col-lg-3">
-                <div class="item"><img class="w-100"
-                        src="<?php bloginfo('template_directory');?>/images/about/gallery-11.jpg" alt="Gallery">
-                </div>
+                <a href="<?php bloginfo('template_directory');?>/images/about/gallery-11.jpg" class="item-img"><img
+                        class="w-100" src="<?php bloginfo('template_directory');?>/images/about/gallery-11.jpg"
+                        alt="Gallery">
+                </a>
             </div>
             <div class="col-6 col-lg-3">
-                <div class="item"><img class="w-100"
-                        src="<?php bloginfo('template_directory');?>/images/about/gallery-12.jpg" alt="Gallery">
-                </div>
+                <a href="<?php bloginfo('template_directory');?>/images/about/gallery-12.jpg" class="item-img"><img
+                        class="w-100" src="<?php bloginfo('template_directory');?>/images/about/gallery-12.jpg"
+                        alt="Gallery">
+                </a>
             </div>
         </div>
     </div>
@@ -203,5 +215,13 @@ get_header();
         </div>
     </div>
 </div>
+
+<script>
+    $(document).ready(function () {
+        $('.item-img').magnificPopup({
+            type: 'image'
+        });
+    });
+</script>
 <?php
 get_footer();
