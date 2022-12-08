@@ -259,16 +259,17 @@ for ($x = 0; $x <= 6; $x++) {
 
 <script>
     $(document).ready(function () {
+        const templateDirectory = 'https://phpstack-866240-3091594.cloudwaysapps.com/wp-content/themes/brava-homes';
         $('.images-unit').slick({
             infinite: true,
-            prevArrow: "<button type='button' class='slick-prev'><img src='http://brava.test/wp-content/themes/brava-homes/images/nav-left.png' /></button>",
-            nextArrow: "<button type='button' class='slick-next'><img src='http://brava.test/wp-content/themes/brava-homes/images/nav-right.png' /></button>",
+            prevArrow: `<button type='button' class='slick-prev'><img src='${templateDirectory}/images/nav-left.png' /></button>`,
+            nextArrow: `<button type='button' class='slick-next'><img src='${templateDirectory}/images/nav-right.png' /></button>`,
         });
 
         $('.items').slick({
             infinite: true,
-            prevArrow: "<button type='button' class='slick-prev'><img src='http://brava.test/wp-content/themes/brava-homes/images/nav-left.png' /></button>",
-            nextArrow: "<div id='nxt'><img src='http://brava.test/wp-content/themes/brava-homes/images/nav-right.png' /></div> ",
+            prevArrow: `<button type='button' class='slick-prev'><img src='${templateDirectory}/images/nav-left.png' /></button>`,
+            nextArrow: `<div id='nxt'><img src='${templateDirectory}/images/nav-right.png' /></div>`,
         });
     });
 
