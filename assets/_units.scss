@@ -169,7 +169,7 @@
         @include body1;
         color: $lightgrey;
 
-        @include breakpoint(largeDesktop) {
+        @include breakpoint(desktop) {
             width: 80%;
         }
     }
