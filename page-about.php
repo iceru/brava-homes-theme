@@ -39,9 +39,12 @@ get_header();
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+            <div class="col-12 col-lg-6 mb-4 mb-lg-0 designed-img">
                 <img class="w-100 thomas" src="<?php bloginfo('template_directory');?>/images/about/thomas.png"
                     alt="Thomas Elliot">
+                <div class="ornament">
+                    <img src="<?php bloginfo('template_directory');?>/images/ornament-b.png">
+                </div>
             </div>
             <div class="col-12 col-lg-6 designed-text">
                 <div class="ornament">
