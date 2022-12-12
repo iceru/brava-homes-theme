@@ -91,19 +91,47 @@
 					?>
 					</div>
 
-					<div class="menu-container">
+					<!-- <div class="menu-container">
 						<?php
 						// Loading WordPress Custom Menu (theme_location).
-						wp_nav_menu(
-							array(
-								'theme_location' => 'main-menu',
-								'container'      => '',
-								'menu_class'     => 'menu-item',
-								'fallback_cb'    => 'WP_Bootstrap_Navwalker::fallback',
-								'walker'         => new WP_Bootstrap_Navwalker(),
-							)
-						);
+						// wp_nav_menu(
+						// 	array(
+						// 		'theme_location' => 'main-menu',
+						// 		'container'      => '',
+						// 		'menu_class'     => 'menu-item',
+						// 		'fallback_cb'    => 'WP_Bootstrap_Navwalker::fallback',
+						// 		'walker'         => new WP_Bootstrap_Navwalker(),
+						// 	)
+						// );
 					?>
+					</div> -->
+
+					<div class="menu-container">
+						<ul>
+							<li>
+								<a href="/about">About</a>
+							</li>
+							<div class="btn-group">
+								<div class="menu-link"><a href="/unit-types">Unit Types</a> </div>
+								<div class="menu-link ms-2 dropdown-toggle dropdown-toggle-split"
+									data-bs-toggle="dropdown" aria-expanded="false">
+									<span class="visually-hidden">Toggle Dropdown</span>
+								</div>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="/unit/diponegoro">Brava Diponegoro</a></li>
+									<li><a class="dropdown-item" href="/unit/himalaya">Brava Himalaya</a></li>
+								</ul>
+							</div>
+							<li>
+								<a href="/location">Location</a>
+							</li>
+							<li>
+								<a href="#">360 Tour</a>
+							</li>
+							<li>
+								<a href="/articles">Articles</a>
+							</li>
+						</ul>
 					</div>
 				</div>
 

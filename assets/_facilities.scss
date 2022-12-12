@@ -18,7 +18,10 @@
     }
 
     .item-text {
-        padding-right: 6rem;
+        @include breakpoint(laptop) {
+            padding-right: 6rem;
+        }
+
         padding-bottom: 100px;
     }
 
@@ -71,7 +74,11 @@
         @include body1;
         color: $lightgrey;
         text-align: justify;
-        width: 70%;
+        width: 85%;
+
+        @include breakpoint(desktop) {
+            width: 70%;
+        }
     }
 
     @include breakpoint(untilLaptop) {
@@ -84,7 +91,17 @@
 
         .content {
             padding: 62px 24px;
-            padding-bottom: 120px;
+
+            &:after {
+                height: 80px;
+                bottom: -79px;
+            }
+
+            .ornament {
+                bottom: -24px;
+                position: absolute;
+                right: 40px;
+            }
         }
 
         .title {
@@ -182,6 +199,7 @@
 
             ul {
                 margin-top: 6px;
+                padding-left: 16px;
 
                 li {
                     margin-bottom: 6px;
