@@ -113,6 +113,12 @@
         }
     }
 
+    .load-wrapper {
+        display: flex;
+        justify-content: center;
+        margin-top: 4rem;
+    }
+
     .bg {
         @include bg;
         opacity: 0.5;

@@ -18,7 +18,6 @@ $args = array(
     ),	
     'posts_per_page' => 1
 );
-
 $banner = get_posts($args);
 
 $args_featured = array(
@@ -31,20 +30,19 @@ $args_featured = array(
     ),	
     'posts_per_page' => 3
 );
-
 $featured = get_posts($args_featured);
+
 $term = get_term_by('name', 'Featured', 'post_tag');
 $term_2 = get_term_by('name', 'Banner', 'post_tag');
-$paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
 $args_recent = array(
     "orderby"        => "date",
     "order"          => "DESC", 
-    'posts_per_page' => 6,
-    'paged' => $paged,
+    'posts_per_page' => 3,
+    'paged' => 1,
     'tag__not_in' =>  array($term->term_id, $term_2->term_id)
 );
-
 $recent_post = new WP_Query($args_recent);
+
 ?>
 <div class="articles-header">
     <div class="featured-banner">
@@ -119,7 +117,7 @@ $recent_post = new WP_Query($args_recent);
             </div>
         </div>
         <div class="top-news">
-            <div class="row">
+            <div class="row" id="top_row">
                 <div class="col-12">
                     <div class="title-page">
                         <div class="title-text">
@@ -161,8 +159,34 @@ $recent_post = new WP_Query($args_recent);
             </div>
 
             <?php wp_reset_postdata() ?>
+            <div class="load-wrapper">
+                <a href="#!" class="read-more" id="load-more">Load more</a>
+            </div>
         </div>
     </div>
 </div>
+
+<script>
+    let currentPage = 1;
+    $('#load-more').on('click', function () {
+        currentPage++; // Do currentPage + 1, because we want to load the next page
+
+        $.ajax({
+            type: 'POST',
+            url: '/wp-admin/admin-ajax.php',
+            dataType: 'json',
+            data: {
+                action: 'weichie_load_more',
+                paged: currentPage,
+            },
+            success: function (res) {
+                if (currentPage >= res.max) {
+                    $('#load-more').hide();
+                }
+                $('#top_row').append(res.html);
+            }
+        });
+    });
+</script>
 <?php
 get_footer();
