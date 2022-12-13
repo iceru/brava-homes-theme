@@ -532,3 +532,60 @@ function gt_posts_custom_column_views( $column ) {
 add_filter( 'manage_posts_columns', 'gt_posts_column_views' );
 add_action( 'manage_posts_custom_column', 'gt_posts_custom_column_views' );
 add_action( 'wp_enqueue_scripts', 'brava_homes_scripts_loader' );
+
+function weichie_load_more() {
+	$term = get_term_by('name', 'Featured', 'post_tag');
+	$term_2 = get_term_by('name', 'Banner', 'post_tag');
+	$ajaxposts = new WP_Query([
+	  "orderby"        => "date",
+	  "order"          => "DESC", 
+	  "post_status" => 'publish',
+	  'posts_per_page' => 3,
+	  'paged' => $_POST['paged'],
+	  'tag__not_in' =>  array($term->term_id, $term_2->term_id)
+	]);
+  
+	$response = '';
+	$max_pages = $ajaxposts->max_num_pages;
+
+	if($ajaxposts->have_posts()) {
+		ob_start();
+	  	while($ajaxposts->have_posts()) : $ajaxposts->the_post();
+		$response .= "
+		<div class='col-12 item-container'>
+            <div class='item'>
+                <div class='row'>
+                    <div class='col-12 col-lg-4 mb-4 mb-lg-0'>
+                        <div class='img'>
+                            <img src='".wp_get_attachment_url( get_post_thumbnail_id($ajaxposts->ID), 'thumbnail' )."' alt=''>
+                        </div>
+                    </div>
+                    <div class='col-12 col-lg-8'>
+                    <div class='title'>
+                    	". get_the_title($ajaxposts->ID) ."
+					</div>
+					<div class='text'>
+						".wp_trim_words(get_post_field('post_content', $ajaxposts->ID), 60, '....')."
+					</div>
+					<div class='read-more'>
+						Read More
+					<img src='".get_bloginfo('template_directory')."/images/articles/read-more.png' alt='More'>
+					</div>
+				</div>
+			</div>
+		</div>";
+	endwhile;
+	$output = ob_get_contents();
+    ob_end_clean();
+	} else {
+	$response = '';
+	}
+	$result = [
+		'max' => $max_pages,
+		'html' => $response,
+	  ];
+	echo json_encode($result);
+	exit;
+	}
+	add_action('wp_ajax_weichie_load_more', 'weichie_load_more');
+	add_action('wp_ajax_nopriv_weichie_load_more', 'weichie_load_more');
