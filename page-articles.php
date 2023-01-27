@@ -39,7 +39,6 @@ $args_recent = array(
     "order"          => "DESC", 
     'posts_per_page' => 3,
     'paged' => 1,
-    'tag__not_in' =>  array($term->term_id, $term_2->term_id)
 );
 $recent_post = new WP_Query($args_recent);
 
