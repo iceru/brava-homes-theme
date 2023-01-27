@@ -4,56 +4,75 @@
  */
 
 get_header();
-
-if ( have_posts() ) :
-	while ( have_posts() ) :
-		the_post();
-
-		get_template_part( 'content', 'single' );
-
-		// If comments are open or we have at least one comment, load up the comment template.
-		if ( comments_open() || get_comments_number() ) :
-			comments_template();
-		endif;
-	endwhile;
-endif;
-
-wp_reset_postdata();
-
-$count_posts = wp_count_posts();
-
-if ( $count_posts->publish > '1' ) :
-	$next_post = get_next_post();
-	$prev_post = get_previous_post();
 ?>
-<hr class="mt-5">
-<div class="post-navigation d-flex justify-content-between">
-	<?php
-		if ( $prev_post ) {
-			$prev_title = get_the_title( $prev_post->ID );
-	?>
-		<div class="pr-3">
-			<a class="previous-post btn btn-lg btn-outline-secondary" href="<?php echo esc_url( get_permalink( $prev_post->ID ) ); ?>" title="<?php echo esc_attr( $prev_title ); ?>">
-				<span class="arrow">&larr;</span>
-				<span class="title"><?php echo wp_kses_post( $prev_title ); ?></span>
-			</a>
-		</div>
-	<?php
-		}
-		if ( $next_post ) {
-			$next_title = get_the_title( $next_post->ID );
-	?>
-		<div class="pl-3">
-			<a class="next-post btn btn-lg btn-outline-secondary" href="<?php echo esc_url( get_permalink( $next_post->ID ) ); ?>" title="<?php echo esc_attr( $next_title ); ?>">
-				<span class="title"><?php echo wp_kses_post( $next_title ); ?></span>
-				<span class="arrow">&rarr;</span>
-			</a>
-		</div>
-	<?php
-		}
-	?>
-</div><!-- /.post-navigation -->
-<?php
-endif;
 
+<div class="article-single">
+
+	<div class="graphics">
+		<img src="<?php bloginfo('template_directory');?>/images/articles/graphic-bottom.png" alt="Background">
+	</div>
+	<?php
+		if ( have_posts() ) :
+			while ( have_posts() ) :
+				the_post();
+
+				get_template_part( 'content', 'single' );
+			endwhile;
+		endif;
+
+		wp_reset_postdata();
+
+		$args_featured = array(
+			'tax_query' => array( 
+				array(
+					'taxonomy' => 'post_tag',
+					'field'    => 'slug',
+					'terms'    => 'featured',
+				),
+			),	
+			'posts_per_page' => 3
+		);
+		$featured = get_posts($args_featured);
+	
+	?>
+
+	<div class="article-featured featured">
+		<div class="row">
+			<div class="col-12">
+				<div class="title-page">
+					<div class="title-text">
+						Featured News
+					</div>
+					<div class="title-line"></div>
+				</div>
+			</div>
+			<?php foreach ($featured as $post) : 
+                    $post_id = $post->ID;
+                    $url = wp_get_attachment_url( get_post_thumbnail_id($post_id), 'thumbnail' ); 
+                ?>
+			<div class="col-12 col-lg-4">
+				<div class="item">
+					<?php gt_set_post_view(); ?>
+					<div class="img">
+						<img src="<?php echo $url ?>" alt="">
+					</div>
+					<div class="title">
+						<?php echo get_the_title($post_id)?>
+					</div>
+					<div class="text">
+						<?php echo wp_trim_words(get_post_field('post_content', $post_id), 60, '....') ?></p>
+					</div>
+					<div class="read-more">
+						Read More
+						<img src="<?php bloginfo('template_directory');?>/images/articles/read-more.png"
+							alt="Read More">
+					</div>
+				</div>
+			</div>
+			<?php endforeach; wp_reset_postdata() ?>
+		</div>
+	</div>
+
+</div>
+<?php
 get_footer();
