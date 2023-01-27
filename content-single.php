@@ -18,11 +18,16 @@
 		?>
 		</header>
 		<div class="row entry-body">
-			<div class="col-12 col-lg-8">
+			<div class="col-12 col-lg-8 order-2 order-lg-1">
 				<div class="top-section">
 					<h1 class="article-title"><?php the_title(); ?></h1>
 					<div class="article-meta">
-						<?php brava_homes_article_posted_on(); ?>
+						<div class="date">
+							Date <?php echo get_the_date('d/m/y', get_the_ID()) ?>
+						</div>
+						<div class="author">
+							Written by <?php echo get_the_author_meta('display_name'); ?>
+						</div>
 					</div>
 				</div>
 				<div class="article-content">
@@ -31,7 +36,7 @@
 				?>
 				</div>
 			</div>
-			<div class="col-12 col-lg-3 offset-lg-1">
+			<div class="col-12 col-lg-3 offset-lg-1 order-1 order-lg-2 mb-4 mb-lg-0">
 				<div class="share">
 					<div class="share-text">
 						Share this article

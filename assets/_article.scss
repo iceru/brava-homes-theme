@@ -23,6 +23,10 @@
         height: 35vw;
         margin-bottom: 64px;
 
+        @include breakpoint(mobileonly) {
+            height: 50vw;
+        }
+
         img {
             width: 100%;
             height: 100%;
@@ -36,6 +40,10 @@
     .entry-body {
         padding: 0 4rem;
 
+        @include breakpoint(untilTablet) {
+            padding: 0 1rem;
+        }
+
         .top-section {
             margin-bottom: 45px;
             padding-bottom: 60px;
@@ -43,12 +51,34 @@
 
             .article-title {
                 margin-bottom: 3rem;
-                @include h1;
+                @include h2;
+
+                @include breakpoint(largeDesktop) {
+                    width: 60%;
+                }
             }
+
+            @include breakpoint(mobileonly) {
+                margin-bottom: 30px;
+                padding-bottom: 40px;
+
+                .article-title {
+                    margin-bottom: 1.5rem;
+                }
+            }
+
 
             .article-meta {
                 color: $primary;
                 @include subtitle2;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-right: 60px;
+
+                @include breakpoint(largeDesktop) {
+                    width: 60%;
+                }
             }
         }
 
@@ -73,6 +103,14 @@
 
 .article-featured {
     padding: 0 4rem;
+
+    @include breakpoint(untilTablet) {
+        padding: 0 1rem;
+    }
+
+    .title-line {
+        width: 50%;
+    }
 }
 
 div.heateor_sss_follow_ul a,

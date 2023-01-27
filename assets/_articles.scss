@@ -145,6 +145,7 @@
             .title {
                 @include h3;
                 margin-bottom: 26px;
+                color: $text;
             }
 
             .text {
@@ -192,6 +193,7 @@
                 line-height: 38px;
                 letter-spacing: 0.01em;
                 margin-bottom: 2.5rem;
+                color: $text;
 
                 @include breakpoint(untilLaptop) {
                     margin-bottom: 1.5rem;
