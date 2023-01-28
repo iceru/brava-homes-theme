@@ -60,7 +60,7 @@ get_header();
 						<?php echo get_the_title($post_id)?>
 					</div>
 					<div class="text">
-						<?php echo wp_trim_words(get_post_field('post_content', $post_id), 60, '....') ?></p>
+						<?php echo get_the_excerpt($post_id) ?>
 					</div>
 					<div class="read-more">
 						Read More
