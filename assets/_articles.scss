@@ -117,50 +117,6 @@
         position: relative;
         z-index: 2;
 
-        .featured {
-            margin-bottom: 100px;
-
-            .img {
-                margin-bottom: 26px;
-                height: 15vw;
-
-                @include breakpoint(untilLaptop) {
-                    height: 30vh;
-                }
-
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
-            }
-
-            .title {
-                @include h3;
-                margin-bottom: 26px;
-                color: $text;
-            }
-
-            .text {
-                @include body1;
-                text-align: justify;
-                margin-bottom: 2rem;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                display: -webkit-box;
-                -webkit-line-clamp: 3;
-                -webkit-box-orient: vertical;
-            }
-
-            .read-more {
-                position: relative;
-                right: 0;
-                left: 0;
-                top: 0;
-                justify-content: flex-end;
-            }
-        }
-
         .top-news {
             .item-container:not(:last-child) {
                 border-bottom: 1px solid rgba($color: $text, $alpha: 0.5);
@@ -267,9 +223,16 @@
 
     .img {
         margin-bottom: 26px;
+        height: 15vw;
+
+        @include breakpoint(untilLaptop) {
+            height: 30vh;
+        }
 
         img {
             width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     }
 
