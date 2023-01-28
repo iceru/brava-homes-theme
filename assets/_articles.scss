@@ -221,6 +221,8 @@
 
                 @include breakpoint(untilLaptop) {
                     margin-bottom: 1.5rem;
+                    font-size: 22px;
+                    line-height: 30px;
                 }
             }
 
@@ -253,6 +255,10 @@
         margin-left: auto;
         height: 1px;
         background-color: $primary;
+
+        @include breakpoint(mobileonly) {
+            width: 500px;
+        }
     }
 }
 
