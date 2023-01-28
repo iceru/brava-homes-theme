@@ -101,23 +101,6 @@
         }
     }
 
-    .read-more {
-        color: $primary;
-        text-transform: uppercase;
-        @include button;
-        display: flex;
-        align-items: center;
-        position: relative;
-        right: 0;
-        left: 0;
-        top: 0;
-        justify-content: flex-end;
-
-        img {
-            margin-left: .5rem;
-        }
-    }
-
     .load-wrapper {
         display: flex;
         justify-content: center;
@@ -236,6 +219,23 @@
                 -webkit-box-orient: vertical;
             }
         }
+    }
+}
+
+.read-more {
+    color: $primary;
+    text-transform: uppercase;
+    @include button;
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 0;
+    left: 0;
+    top: 0;
+    justify-content: flex-end;
+
+    img {
+        margin-left: .5rem;
     }
 }
 
