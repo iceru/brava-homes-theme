@@ -139,9 +139,16 @@
 
             .img {
                 margin-bottom: 26px;
+                height: 15vw;
+
+                @include breakpoint(untilTablet) {
+                    height: 30vh;
+                }
 
                 img {
                     width: 100%;
+                    height: 100%;
+                    object-fit: cover;
                 }
             }
 
@@ -184,12 +191,21 @@
             }
 
             .img {
-                @include breakpoint(desktop) {
+                margin-bottom: 26px;
+                height: 15vw;
+
+                @include breakpoint(untilTablet) {
+                    height: 30vh;
+                }
+
+                @include breakpoint(laptop) {
                     padding-right: 1rem;
                 }
 
                 img {
                     width: 100%;
+                    height: 100%;
+                    object-fit: cover;
                 }
             }
 
