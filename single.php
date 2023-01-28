@@ -50,7 +50,7 @@ get_header();
                     $post_id = $post->ID;
                     $url = wp_get_attachment_url( get_post_thumbnail_id($post_id), 'thumbnail' ); 
                 ?>
-			<div class="col-12 col-lg-4">
+			<div class="col-12 col-lg-4 mb-3 mb-lg-0">
 				<div class="item">
 					<?php gt_set_post_view(); ?>
 					<div class="img">
