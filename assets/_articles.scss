@@ -43,6 +43,11 @@
             width: 80%;
             color: $lightgrey;
             text-align: justify;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
         }
 
         .read-more {
@@ -129,8 +134,11 @@
         position: relative;
         z-index: 2;
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 842b712968e9a933778fd0f9cb03fdda5291db3a
         .featured {
             margin-bottom: 100px;
 
@@ -152,6 +160,11 @@
                 @include body1;
                 text-align: justify;
                 margin-bottom: 2rem;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
             }
 
             .read-more {
@@ -203,6 +216,11 @@
             .text {
                 @include body1;
                 text-align: justify;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
             }
         }
     }

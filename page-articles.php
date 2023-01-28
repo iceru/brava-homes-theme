@@ -59,7 +59,11 @@ $recent_post = new WP_Query($args_recent);
                             </div>
                         </a>
                         <div class="text">
+<<<<<<< HEAD
                             <?php echo wp_trim_words(get_post_field('post_content', $post_id), 60, '....') ?></p>
+=======
+                            <?php echo get_the_excerpt($post_id) ?></p>
+>>>>>>> 842b712968e9a933778fd0f9cb03fdda5291db3a
                         </div>
                         <a href="<?php echo get_permalink($post_id) ?>">
                             <div class="read-more">
@@ -111,7 +115,11 @@ $recent_post = new WP_Query($args_recent);
                             </div>
                         </a>
                         <div class="text">
+<<<<<<< HEAD
                             <?php echo wp_trim_words(get_post_field('post_content', $post_id), 60, '....') ?></p>
+=======
+                            <?php echo get_the_excerpt($post_id) ?></p>
+>>>>>>> 842b712968e9a933778fd0f9cb03fdda5291db3a
                         </div>
                         <a href="<?php echo get_permalink($post_id) ?>">
                             <div class="read-more">
@@ -157,7 +165,7 @@ $recent_post = new WP_Query($args_recent);
                                     </div>
                                 </a>
                                 <div class="text">
-                                    <?php echo wp_trim_words(get_post_field('post_content', $post_id), 60, '....') ?>
+                                    <?php echo get_the_excerpt($post_id) ?>
                                     </p>
                                 </div>
                                 <a href="<?php echo get_permalink($post_id) ?>">
