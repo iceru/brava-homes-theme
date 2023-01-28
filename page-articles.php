@@ -39,7 +39,6 @@ $args_recent = array(
     "order"          => "DESC", 
     'posts_per_page' => 3,
     'paged' => 1,
-    'tag__not_in' =>  array($term->term_id, $term_2->term_id)
 );
 $recent_post = new WP_Query($args_recent);
 
@@ -54,17 +53,21 @@ $recent_post = new WP_Query($args_recent);
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-lg-9">
-                        <div class="title">
-                            <?php echo get_the_title($post_id)?>
-                        </div>
+                        <a href="<?php echo get_permalink($post_id) ?>">
+                            <div class="title">
+                                <?php echo get_the_title($post_id)?>
+                            </div>
+                        </a>
                         <div class="text">
                             <?php echo wp_trim_words(get_post_field('post_content', $post_id), 60, '....') ?></p>
                         </div>
-                        <div class="read-more">
-                            Read More
-                            <img src="<?php bloginfo('template_directory');?>/images/articles/read-more.png"
-                                alt="Read More">
-                        </div>
+                        <a href="<?php echo get_permalink($post_id) ?>">
+                            <div class="read-more">
+                                Read More
+                                <img src="<?php bloginfo('template_directory');?>/images/articles/read-more.png"
+                                    alt="Read More">
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -97,20 +100,26 @@ $recent_post = new WP_Query($args_recent);
                 <div class="col-12 col-lg-4">
                     <div class="item">
                         <?php gt_set_post_view(); ?>
-                        <div class="img">
-                            <img src="<?php echo $url ?>" alt="">
-                        </div>
-                        <div class="title">
-                            <?php echo get_the_title($post_id)?>
-                        </div>
+                        <a href="<?php echo get_permalink($post_id) ?>">
+                            <div class="img">
+                                <img src="<?php echo $url ?>" alt="">
+                            </div>
+                        </a>
+                        <a href="<?php echo get_permalink($post_id) ?>">
+                            <div class="title">
+                                <?php echo get_the_title($post_id)?>
+                            </div>
+                        </a>
                         <div class="text">
                             <?php echo wp_trim_words(get_post_field('post_content', $post_id), 60, '....') ?></p>
                         </div>
-                        <div class="read-more">
-                            Read More
-                            <img src="<?php bloginfo('template_directory');?>/images/articles/read-more.png"
-                                alt="Read More">
-                        </div>
+                        <a href="<?php echo get_permalink($post_id) ?>">
+                            <div class="read-more">
+                                Read More
+                                <img src="<?php bloginfo('template_directory');?>/images/articles/read-more.png"
+                                    alt="Read More">
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <?php endforeach; wp_reset_postdata() ?>
@@ -134,23 +143,30 @@ $recent_post = new WP_Query($args_recent);
                     <div class="item">
                         <div class="row">
                             <div class="col-12 col-lg-4 mb-4 mb-lg-0">
-                                <div class="img">
-                                    <img src="<?php echo $url ?>" alt="">
-                                </div>
+                                <a href="<?php echo get_permalink($post_id) ?>">
+                                    <div class="img">
+                                        <img src="<?php echo $url ?>" alt="">
+                                    </div>
+                                </a>
+
                             </div>
                             <div class="col-12 col-lg-8">
-                                <div class="title">
-                                    <?php echo get_the_title($post_id)?>
-                                </div>
+                                <a href="<?php echo get_permalink($post_id) ?>">
+                                    <div class="title">
+                                        <?php echo get_the_title($post_id)?>
+                                    </div>
+                                </a>
                                 <div class="text">
                                     <?php echo wp_trim_words(get_post_field('post_content', $post_id), 60, '....') ?>
                                     </p>
                                 </div>
-                                <div class="read-more">
-                                    Read More
-                                    <img src="<?php bloginfo('template_directory');?>/images/articles/read-more.png"
-                                        alt="Read More">
-                                </div>
+                                <a href="<?php echo get_permalink($post_id) ?>">
+                                    <div class="read-more">
+                                        Read More
+                                        <img src="<?php bloginfo('template_directory');?>/images/articles/read-more.png"
+                                            alt="Read More">
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>

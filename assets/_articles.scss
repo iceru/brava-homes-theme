@@ -129,24 +129,7 @@
         position: relative;
         z-index: 2;
 
-        .title-page {
-            display: flex;
-            align-items: center;
-            margin-bottom: 60px;
 
-            .title-text {
-                @include h1;
-                color: $text;
-                white-space: nowrap;
-            }
-
-            .title-line {
-                width: 612px;
-                margin-left: auto;
-                height: 1px;
-                background-color: $primary;
-            }
-        }
 
         .featured {
             margin-bottom: 100px;
@@ -162,6 +145,7 @@
             .title {
                 @include h3;
                 margin-bottom: 26px;
+                color: $text;
             }
 
             .text {
@@ -209,6 +193,7 @@
                 line-height: 38px;
                 letter-spacing: 0.01em;
                 margin-bottom: 2.5rem;
+                color: $text;
 
                 @include breakpoint(untilLaptop) {
                     margin-bottom: 1.5rem;
@@ -220,5 +205,55 @@
                 text-align: justify;
             }
         }
+    }
+}
+
+.title-page {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+
+    .title-text {
+        @include h1;
+        color: $text;
+        white-space: nowrap;
+    }
+
+    .title-line {
+        width: 612px;
+        margin-left: auto;
+        height: 1px;
+        background-color: $primary;
+    }
+}
+
+.featured {
+    margin-bottom: 100px;
+
+    .img {
+        margin-bottom: 26px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .title {
+        @include h3;
+        margin-bottom: 26px;
+    }
+
+    .text {
+        @include body1;
+        text-align: justify;
+        margin-bottom: 2rem;
+    }
+
+    .read-more {
+        position: relative;
+        right: 0;
+        left: 0;
+        top: 0;
+        justify-content: flex-end;
     }
 }
