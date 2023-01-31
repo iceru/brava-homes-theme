@@ -53,20 +53,26 @@ get_header();
 			<div class="col-12 col-lg-4 mb-3 mb-lg-0">
 				<div class="item">
 					<?php gt_set_post_view(); ?>
-					<div class="img">
-						<img src="<?php echo $url ?>" alt="">
-					</div>
-					<div class="title">
-						<?php echo get_the_title($post_id)?>
-					</div>
+					<a href="<?php echo get_permalink($post_id) ?>">
+						<div class="img">
+							<img src="<?php echo $url ?>" alt="">
+						</div>
+					</a>
+					<a href="<?php echo get_permalink($post_id) ?>">
+						<div class="title">
+							<?php echo get_the_title($post_id)?>
+						</div>
+					</a>
 					<div class="text">
 						<?php echo get_the_excerpt($post_id) ?>
 					</div>
-					<div class="read-more">
-						Read More
-						<img src="<?php bloginfo('template_directory');?>/images/articles/read-more.png"
-							alt="Read More">
-					</div>
+					<a href="<?php echo get_permalink($post_id) ?>">
+						<div class="read-more">
+							Read More
+							<img src="<?php bloginfo('template_directory');?>/images/articles/read-more.png"
+								alt="Read More">
+						</div>
+					</a>
 				</div>
 			</div>
 			<?php endforeach; wp_reset_postdata() ?>

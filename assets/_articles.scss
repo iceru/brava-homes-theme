@@ -239,6 +239,7 @@
     .title {
         @include h3;
         margin-bottom: 26px;
+        color: $text;
     }
 
     .text {

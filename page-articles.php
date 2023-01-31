@@ -160,13 +160,6 @@ $recent_post = new WP_Query($args_recent);
                                     <?php echo get_the_excerpt($post_id) ?>
                                     </p>
                                 </div>
-                                <a href="<?php echo get_permalink($post_id) ?>">
-                                    <div class="read-more">
-                                        Read More
-                                        <img src="<?php bloginfo('template_directory');?>/images/articles/read-more.png"
-                                            alt="Read More">
-                                    </div>
-                                </a>
                             </div>
                         </div>
                     </div>
