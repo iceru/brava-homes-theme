@@ -174,8 +174,8 @@ div.heateor_sss_horizontal_sharing div.heateor_sss_sharing_ul a {
                 margin-bottom: 3rem;
                 @include h2;
 
-                @include breakpoint(largeDesktop) {
-                    width: 60%;
+                @include breakpoint(desktop) {
+                    width: 75%;
                 }
             }
 
@@ -195,10 +195,9 @@ div.heateor_sss_horizontal_sharing div.heateor_sss_sharing_ul a {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                padding-right: 60px;
 
-                @include breakpoint(largeDesktop) {
-                    width: 60%;
+                @include breakpoint(desktop) {
+                    width: 55%;
                 }
             }
         }
